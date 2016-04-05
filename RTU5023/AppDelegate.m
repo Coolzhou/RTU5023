@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  RTU5023
+//  k3
 //
-//  Created by paul on 16/4/4.
+//  Created by amttgroup on 16/2/16.
 //  Copyright © 2016年 paul. All rights reserved.
 //
 
@@ -17,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *dir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    _documentDirectory = dir;
+    NSLog(@"  _documentDirectory  %@",_documentDirectory);
+    _borderColor = [UIColor colorWithRed:214.0/255.0 green:214.0/255.0  blue:214.0/255.0  alpha:1.0];
+    _bgColor = [UIColor colorWithRed:238.0/255.0 green:238.0/255.0  blue:238.0/255.0  alpha:1.0];
+    _isEntry = YES;
+    
+    [NSThread sleepForTimeInterval:1.0f];//设置启动页面时间
     return YES;
 }
 
@@ -31,7 +39,9 @@
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    if (_isSetAppPwd) {
+        [_mainV toScanPwdPage];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  RTU5023
+
+  Created by paul on 16/4/4.
+  Copyright © 2016年 paul. All rights reserved.
+*/
+/*main*/
+titleL="SMS ALert";
+titleL2="Device List";
+btnL="Add Device";
+nBtnLL1="Edit";
+nBtnLL2="Done";
+nBtnRL="Password";
+delBtnL="Delete";
+delTip="Delete failed!";
+smsTip1="This device does not support SMS function";
+smsTip2="Fail in send";
+smsTip3="Set successfully";
+/*ADD*/
+addTitleL="Add Device";
+addHostNameL="Device Name";
+addHostNumL="SIMcard Number";
+addHostPWDL="Device Password";
+addTitleL2="Edit Device";
+addTip="Failed to add! Device Name, Number, Password can not be empty!";
+addTip2="Added successfully!";
+editTip="Editing failed! Device Name, Number, Password can not be empty!";
+editTip2="Editor!";
+add_saveBtnL="Save";
+addTip3="SIMcard number already exists!";
+addTip4="Device name already exists!";
+/*APP PWD*/
+appPWDTitleL="Password";
+appPWDOpenL="Enable";
+appPWDCloseL="Disable";
+/*set PWD*/
+setPWDTitleL="Input App Password";
+setPWDTitleL2="Please enter the App password again!";
+setPWDTip="Failed to set the APP password!";
+setPWDTip2="Please re-enter the password is not correct!";
+setPWDTip3="Two please re-enter the password does not match!";
+/*User*/
+userTip2="Alarm phone number can not be empty, must be a number (0 ~9), the maximum length of 21!";
+userTip3="Determine whether to delete？";
+userAlerOkBtn="Yse";
+userAlerCanBtn="Cancel";
+/*SET Alarm*/
+setAlarmTip="Name can not be empty!";
+/*Set TH*/
+setTHTip="Low cannot be empty, and can only enter the number, length of 3";//低限值不能为空，且只能输入数字，长度为3
+setTHTip1="High cannot be empty, and can only enter the number, length of 3";//高限值不能为空，且只能输入数字，长度为3
+/*SET PWD*/
+pwdTip="The old password is not in line with the current password. Please re-enter the password!";//旧密码与当前密码不一致，请重新输入！
+pwdTip2="The new password must be a bit number, and the length must be 4!";//新密码必须位数字，且长度必须为4！
+pwdTip3="Old passwords can not be consistent with the new password!";//旧密码不能与新密码一致！

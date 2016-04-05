@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  RTU5023
+
+  Created by paul on 16/4/4.
+  Copyright © 2016年 paul. All rights reserved.
+*/
+/*main*/
+titleL="SMS ALert";
+titleL2="主机账户";
+btnL="添加主机账户";
+nBtnLL1="编辑";
+nBtnLL2="完成";
+nBtnRL="密码";
+delBtnL="删除";
+delTip="删除失败！";
+smsTip1="此设备不支持短信发送功能";
+smsTip2="发送失败";
+smsTip3="设置成功";
+/*ADD*/
+addTitleL="添加主机账户";
+addHostNameL="主机名";
+addHostNumL="主机的手机卡号码";
+addHostPWDL="主机密码";
+addTitleL2="编辑主机账户";
+addTip="添加失败！主机名、主机卡号、密码不能为空！";
+addTip2="添加成功！";
+editTip="编辑失败！主机名、主机卡号、密码不能为空！";
+editTip2="编辑成功！";
+add_saveBtnL="保存";
+addTip3="主机的手机卡号码已经存在！";
+addTip4="主机名已经存在！";
+/*APP PWD*/
+appPWDTitleL="密码";
+appPWDOpenL="开启";
+appPWDCloseL="关闭";
+/*set PWD*/
+setPWDTitleL="请输入APP密码";
+setPWDTitleL2="请再次输入APP密码";
+setPWDTip="设置APP密码失败！";
+setPWDTip2="密码不正确请重新输入！";
+setPWDTip3="两次密码不一致请重新输入！";
+/*User*/
+userTip2="用户电话号码不能为空，且必须位数字（0~9），最大长度为21！";
+userTip3="是否确定删除用户吗？";
+userAlerOkBtn="是的";
+userAlerCanBtn="忽略";
+/*SET Alarm*/
+setAlarmTip="名字不能为空！";
+/*Set TH*/
+setTHTip="低限值不能为空，且只能输入数字，长度为3";//
+setTHTip1="高限值不能为空，且只能输入数字，长度为3";//
+/*SET PWD*/
+pwdTip="旧密码与当前密码不一致，请重新输入！";//
+pwdTip2="新密码必须位数字，且长度必须为4！";//
+pwdTip3="旧密码不能与新密码一致！";//

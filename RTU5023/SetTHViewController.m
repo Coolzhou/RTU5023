@@ -98,7 +98,7 @@ AppDelegate *set_th_app;
     
     if (h.length == 1) {
         h = [NSString stringWithFormat:@"00%@",h];
-    }else if(l.length == 2){
+    }else if(h.length == 2){
         h = [NSString stringWithFormat:@"0%@",h];
     }
     //1234AINR1L底限值H高限值#

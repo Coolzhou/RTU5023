@@ -45,6 +45,7 @@ AppDelegate *setPWD_app;
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString *t = textField.text;
     int tag = (int)textField.tag;
+    
     if (t.length >=1) {
         switch (tag) {
             case 1:
@@ -56,7 +57,7 @@ AppDelegate *setPWD_app;
             case 3:
                 [_set_pwdText4 becomeFirstResponder];
                 timer = [NSTimer scheduledTimerWithTimeInterval:0.1f target:self selector:@selector(hiden) userInfo:nil repeats:NO];
-                return NO;
+                return YES;
             case 4:
                 return NO;
                 break;

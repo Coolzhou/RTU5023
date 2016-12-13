@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIView *host_statusV;
 @property (weak, nonatomic) IBOutlet UIView *host_pulseV;
 @property (weak, nonatomic) IBOutlet UIView *host_rebootV;
+@property (weak, nonatomic) IBOutlet UIView *host_cycleV;
+@property (weak, nonatomic) IBOutlet UIView *host_keyV;
 - (IBAction)hostPhoneClick:(id)sender;
 - (IBAction)hostRelayClick:(id)sender;
 - (IBAction)hostAINClick:(id)sender;
@@ -28,5 +30,7 @@
 - (IBAction)hostStatusClick:(id)sender;
 - (IBAction)hostPulseClick:(id)sender;
 - (IBAction)hostRebootClick:(id)sender;
+- (IBAction)hostCycleClick:(id)sender;
+- (IBAction)hostKeyClick:(id)sender;
 
 @end

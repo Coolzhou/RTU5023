@@ -15,6 +15,7 @@
 #import "LanguageNAVController.h"
 #import "DailyNavigationController.h"
 #import "PWDNavigationController.h"
+#import "CycleNAVController.h"
 
 @interface SetP1ViewController ()
 
@@ -52,6 +53,10 @@ AppDelegate *setP1_app;
     [[_setP1_L6 layer] setBorderColor: c.CGColor];//颜色
     [[_setP1_L7 layer] setBorderWidth:1.5];//画线的宽度
     [[_setP1_L7 layer] setBorderColor: c.CGColor];//颜色
+    [[_setP1_L8 layer] setBorderWidth:1.5];//画线的宽度
+    [[_setP1_L8 layer] setBorderColor: c.CGColor];//颜色
+    [[_setP1_L9 layer] setBorderWidth:1.5];//画线的宽度
+    [[_setP1_L9 layer] setBorderColor: c.CGColor];//颜色
     
 }
 
@@ -94,6 +99,16 @@ AppDelegate *setP1_app;
 - (IBAction)setP1_pwdClick:(id)sender {
     PWDNavigationController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"set_pwd"];
     [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+}
+
+- (IBAction)setP1_cycleClick:(id)sender {
+    CycleNAVController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"cycle"];
+    [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+}
+
+- (IBAction)setP1_keyClick:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@RESET", setP1_app.sel_host_pwd];
+    [setP1_app.mainV sendMsg:msg phNum:setP1_app.sel_host_phNum];
 }
 
 

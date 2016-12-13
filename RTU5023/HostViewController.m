@@ -49,6 +49,11 @@ AppDelegate *hostV_app;
     [[_host_pulseV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
     [[_host_rebootV layer] setBorderWidth:1.0];//画线的宽度
     [[_host_rebootV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
+    
+    [[_host_cycleV layer] setBorderWidth:1.0];//画线的宽度
+    [[_host_cycleV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
+    [[_host_keyV layer] setBorderWidth:1.0];//画线的宽度
+    [[_host_keyV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +105,16 @@ AppDelegate *hostV_app;
 
 - (IBAction)hostRebootClick:(id)sender {
     NSString *msg = [NSString stringWithFormat:@"%@EE", hostV_app.sel_host_pwd];
+    [hostV_app.mainV sendMsg:msg phNum:hostV_app.sel_host_phNum];
+}
+
+- (IBAction)hostCycleClick:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@RE", hostV_app.sel_host_pwd];
+    [hostV_app.mainV sendMsg:msg phNum:hostV_app.sel_host_phNum];
+}
+
+- (IBAction)hostKeyClick:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@RT", hostV_app.sel_host_pwd];
     [hostV_app.mainV sendMsg:msg phNum:hostV_app.sel_host_phNum];
 }
 @end

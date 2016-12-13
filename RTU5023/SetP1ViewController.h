@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L5;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L6;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L7;
+@property (weak, nonatomic) IBOutlet UILabel *setP1_L8;
+@property (weak, nonatomic) IBOutlet UILabel *setP1_L9;
 
 - (IBAction)setP1_SyncTimeClick:(id)sender;
 - (IBAction)setP1_numClick:(id)sender;
@@ -26,5 +28,7 @@
 - (IBAction)setP1_autoClick:(id)sender;
 - (IBAction)setP1_languageClick:(id)sender;
 - (IBAction)setP1_pwdClick:(id)sender;
+- (IBAction)setP1_cycleClick:(id)sender;
+- (IBAction)setP1_keyClick:(id)sender;
 
 @end

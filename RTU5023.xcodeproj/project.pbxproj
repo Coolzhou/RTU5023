@@ -7,14 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9035481CB3A7F600FD63A1 /* Localizable.strings */; };
+		DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */; };
 		DAAFF5811CB25EC6000485B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5801CB25EC6000485B5 /* main.m */; };
-		DAAFF5841CB25EC6000485B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5831CB25EC6000485B5 /* AppDelegate.m */; };
-		DAAFF5871CB25EC6000485B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5861CB25EC6000485B5 /* ViewController.m */; };
 		DAAFF58A1CB25EC6000485B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAFF5881CB25EC6000485B5 /* Main.storyboard */; };
 		DAAFF58C1CB25EC6000485B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAFF58B1CB25EC6000485B5 /* Assets.xcassets */; };
 		DAAFF58F1CB25EC6000485B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAFF58D1CB25EC6000485B5 /* LaunchScreen.storyboard */; };
 		DAAFF59A1CB25EC6000485B5 /* RTU5023Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5991CB25EC6000485B5 /* RTU5023Tests.m */; };
 		DAAFF5A51CB25EC7000485B5 /* RTU5023UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5A41CB25EC7000485B5 /* RTU5023UITests.m */; };
+		DAAFF60D1CB2613A000485B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6081CB2613A000485B5 /* AppDelegate.m */; };
+		DAAFF60E1CB2613A000485B5 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF60A1CB2613A000485B5 /* NavigationController.m */; };
+		DAAFF60F1CB2613A000485B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF60C1CB2613A000485B5 /* ViewController.m */; };
+		DAAFF6131CB26153000485B5 /* Unitl.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6121CB26153000485B5 /* Unitl.m */; };
+		DAAFF61D1CB26258000485B5 /* AddNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6161CB26258000485B5 /* AddNavigationController.m */; };
+		DAAFF61E1CB26258000485B5 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6181CB26258000485B5 /* AddViewController.m */; };
+		DAAFF61F1CB26258000485B5 /* TypeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF61A1CB26258000485B5 /* TypeNavigationController.m */; };
+		DAAFF6201CB26258000485B5 /* TypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF61C1CB26258000485B5 /* TypeViewController.m */; };
+		DAAFF62A1CB26275000485B5 /* AppPWDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6231CB26275000485B5 /* AppPWDNavigationController.m */; };
+		DAAFF62B1CB26275000485B5 /* AppPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6251CB26275000485B5 /* AppPWDViewController.m */; };
+		DAAFF62C1CB26275000485B5 /* SetPWDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6271CB26275000485B5 /* SetPWDNavigationController.m */; };
+		DAAFF62D1CB26275000485B5 /* SetPWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6291CB26275000485B5 /* SetPWDViewController.m */; };
+		DAAFF6331CB2629C000485B5 /* HostNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6301CB2629C000485B5 /* HostNavigationController.m */; };
+		DAAFF6341CB2629C000485B5 /* HostPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6321CB2629C000485B5 /* HostPageController.m */; };
+		DAAFF6391CB262FB000485B5 /* HostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6361CB262FB000485B5 /* HostViewController.m */; };
+		DAAFF63A1CB262FB000485B5 /* SetP1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6381CB262FB000485B5 /* SetP1ViewController.m */; };
+		DAAFF6451CB26E00000485B5 /* Host_SetNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6441CB26E00000485B5 /* Host_SetNavigationController.m */; };
+		DAAFF6481CB26E16000485B5 /* Host_SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6471CB26E16000485B5 /* Host_SetViewController.m */; };
+		DAAFF64B1CB276F4000485B5 /* Host_RECOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF64A1CB276F4000485B5 /* Host_RECOViewController.m */; };
+		DAAFF64E1CB2770D000485B5 /* Host_RECO_NAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF64D1CB2770D000485B5 /* Host_RECO_NAVController.m */; };
+		DAAFF6541CB29734000485B5 /* RTUNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6511CB29734000485B5 /* RTUNavigationController.m */; };
+		DAAFF6551CB29734000485B5 /* RTUViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6531CB29734000485B5 /* RTUViewController.m */; };
+		DAAFF65A1CB29AA1000485B5 /* UserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6571CB29AA1000485B5 /* UserNavigationController.m */; };
+		DAAFF65B1CB29AA1000485B5 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6591CB29AA1000485B5 /* UserViewController.m */; };
+		DAAFF65E1CB2A460000485B5 /* SetAlarmNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF65D1CB2A460000485B5 /* SetAlarmNAVController.m */; };
+		DAAFF6611CB2A47D000485B5 /* SetAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6601CB2A47D000485B5 /* SetAlarmViewController.m */; };
+		DAAFF6651CB2AE05000485B5 /* SetTHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6641CB2AE05000485B5 /* SetTHViewController.m */; };
+		DAAFF6681CB2AE2F000485B5 /* SetTHNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6671CB2AE2F000485B5 /* SetTHNAVController.m */; };
+		DAAFF66D1CB2B613000485B5 /* DailyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF66A1CB2B613000485B5 /* DailyNavigationController.m */; };
+		DAAFF66E1CB2B613000485B5 /* DailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF66C1CB2B613000485B5 /* DailyViewController.m */; };
+		DAAFF6711CB2B94B000485B5 /* AutoNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6701CB2B94B000485B5 /* AutoNAVController.m */; };
+		DAAFF6741CB2B960000485B5 /* AutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6731CB2B960000485B5 /* AutoViewController.m */; };
+		DAAFF6771CB2BDC6000485B5 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6761CB2BDC6000485B5 /* LanguageViewController.m */; };
+		DAAFF67A1CB2BDE8000485B5 /* LanguageNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF6791CB2BDE8000485B5 /* LanguageNAVController.m */; };
+		DAAFF67F1CB2C511000485B5 /* PWDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF67C1CB2C511000485B5 /* PWDNavigationController.m */; };
+		DAAFF6801CB2C511000485B5 /* PWDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF67E1CB2C511000485B5 /* PWDViewController.m */; };
+		DACDB3491DE71F4100449F17 /* CycleNAVController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACDB3481DE71F4100449F17 /* CycleNAVController.m */; };
+		DACDB34C1DE71F5900449F17 /* CycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DACDB34B1DE71F5900449F17 /* CycleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +73,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA6394D11CB396E10017715D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		DA9035471CB3A7F600FD63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA9035491CB3A7F700FD63A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DA90354B1CB3A7FC00FD63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA90354D1CB3A7FD00FD63A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DAAFF57C1CB25EC6000485B5 /* RTU5023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTU5023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAFF5801CB25EC6000485B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAAFF5821CB25EC6000485B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DAAFF5831CB25EC6000485B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DAAFF5851CB25EC6000485B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DAAFF5861CB25EC6000485B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAAFF5891CB25EC6000485B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAAFF58B1CB25EC6000485B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAFF58E1CB25EC6000485B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +90,83 @@
 		DAAFF5A01CB25EC7000485B5 /* RTU5023UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTU5023UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAFF5A41CB25EC7000485B5 /* RTU5023UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTU5023UITests.m; sourceTree = "<group>"; };
 		DAAFF5A61CB25EC7000485B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAFF6071CB2613A000485B5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAAFF6081CB2613A000485B5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAAFF6091CB2613A000485B5 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		DAAFF60A1CB2613A000485B5 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		DAAFF60B1CB2613A000485B5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAAFF60C1CB2613A000485B5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAAFF6111CB26153000485B5 /* Unitl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unitl.h; sourceTree = "<group>"; };
+		DAAFF6121CB26153000485B5 /* Unitl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unitl.m; sourceTree = "<group>"; };
+		DAAFF6151CB26258000485B5 /* AddNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6161CB26258000485B5 /* AddNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6171CB26258000485B5 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		DAAFF6181CB26258000485B5 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		DAAFF6191CB26258000485B5 /* TypeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeNavigationController.h; sourceTree = "<group>"; };
+		DAAFF61A1CB26258000485B5 /* TypeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeNavigationController.m; sourceTree = "<group>"; };
+		DAAFF61B1CB26258000485B5 /* TypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeViewController.h; sourceTree = "<group>"; };
+		DAAFF61C1CB26258000485B5 /* TypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeViewController.m; sourceTree = "<group>"; };
+		DAAFF6221CB26275000485B5 /* AppPWDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPWDNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6231CB26275000485B5 /* AppPWDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPWDNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6241CB26275000485B5 /* AppPWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPWDViewController.h; sourceTree = "<group>"; };
+		DAAFF6251CB26275000485B5 /* AppPWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPWDViewController.m; sourceTree = "<group>"; };
+		DAAFF6261CB26275000485B5 /* SetPWDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPWDNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6271CB26275000485B5 /* SetPWDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPWDNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6281CB26275000485B5 /* SetPWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPWDViewController.h; sourceTree = "<group>"; };
+		DAAFF6291CB26275000485B5 /* SetPWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPWDViewController.m; sourceTree = "<group>"; };
+		DAAFF62F1CB2629C000485B5 /* HostNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6301CB2629C000485B5 /* HostNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6311CB2629C000485B5 /* HostPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostPageController.h; sourceTree = "<group>"; };
+		DAAFF6321CB2629C000485B5 /* HostPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostPageController.m; sourceTree = "<group>"; };
+		DAAFF6351CB262FB000485B5 /* HostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostViewController.h; sourceTree = "<group>"; };
+		DAAFF6361CB262FB000485B5 /* HostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostViewController.m; sourceTree = "<group>"; };
+		DAAFF6371CB262FB000485B5 /* SetP1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetP1ViewController.h; sourceTree = "<group>"; };
+		DAAFF6381CB262FB000485B5 /* SetP1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetP1ViewController.m; sourceTree = "<group>"; };
+		DAAFF6431CB26E00000485B5 /* Host_SetNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host_SetNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6441CB26E00000485B5 /* Host_SetNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host_SetNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6461CB26E16000485B5 /* Host_SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host_SetViewController.h; sourceTree = "<group>"; };
+		DAAFF6471CB26E16000485B5 /* Host_SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host_SetViewController.m; sourceTree = "<group>"; };
+		DAAFF6491CB276F4000485B5 /* Host_RECOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host_RECOViewController.h; sourceTree = "<group>"; };
+		DAAFF64A1CB276F4000485B5 /* Host_RECOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host_RECOViewController.m; sourceTree = "<group>"; };
+		DAAFF64C1CB2770D000485B5 /* Host_RECO_NAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Host_RECO_NAVController.h; sourceTree = "<group>"; };
+		DAAFF64D1CB2770D000485B5 /* Host_RECO_NAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Host_RECO_NAVController.m; sourceTree = "<group>"; };
+		DAAFF6501CB29734000485B5 /* RTUNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6511CB29734000485B5 /* RTUNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6521CB29734000485B5 /* RTUViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUViewController.h; sourceTree = "<group>"; };
+		DAAFF6531CB29734000485B5 /* RTUViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUViewController.m; sourceTree = "<group>"; };
+		DAAFF6561CB29AA1000485B5 /* UserNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNavigationController.h; sourceTree = "<group>"; };
+		DAAFF6571CB29AA1000485B5 /* UserNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNavigationController.m; sourceTree = "<group>"; };
+		DAAFF6581CB29AA1000485B5 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		DAAFF6591CB29AA1000485B5 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		DAAFF65C1CB2A460000485B5 /* SetAlarmNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmNAVController.h; sourceTree = "<group>"; };
+		DAAFF65D1CB2A460000485B5 /* SetAlarmNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmNAVController.m; sourceTree = "<group>"; };
+		DAAFF65F1CB2A47D000485B5 /* SetAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController.h; sourceTree = "<group>"; };
+		DAAFF6601CB2A47D000485B5 /* SetAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController.m; sourceTree = "<group>"; };
+		DAAFF6631CB2AE05000485B5 /* SetTHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTHViewController.h; sourceTree = "<group>"; };
+		DAAFF6641CB2AE05000485B5 /* SetTHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTHViewController.m; sourceTree = "<group>"; };
+		DAAFF6661CB2AE2F000485B5 /* SetTHNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTHNAVController.h; sourceTree = "<group>"; };
+		DAAFF6671CB2AE2F000485B5 /* SetTHNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTHNAVController.m; sourceTree = "<group>"; };
+		DAAFF6691CB2B613000485B5 /* DailyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyNavigationController.h; sourceTree = "<group>"; };
+		DAAFF66A1CB2B613000485B5 /* DailyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyNavigationController.m; sourceTree = "<group>"; };
+		DAAFF66B1CB2B613000485B5 /* DailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyViewController.h; sourceTree = "<group>"; };
+		DAAFF66C1CB2B613000485B5 /* DailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyViewController.m; sourceTree = "<group>"; };
+		DAAFF66F1CB2B94B000485B5 /* AutoNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoNAVController.h; sourceTree = "<group>"; };
+		DAAFF6701CB2B94B000485B5 /* AutoNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoNAVController.m; sourceTree = "<group>"; };
+		DAAFF6721CB2B960000485B5 /* AutoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoViewController.h; sourceTree = "<group>"; };
+		DAAFF6731CB2B960000485B5 /* AutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoViewController.m; sourceTree = "<group>"; };
+		DAAFF6751CB2BDC6000485B5 /* LanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageViewController.h; sourceTree = "<group>"; };
+		DAAFF6761CB2BDC6000485B5 /* LanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
+		DAAFF6781CB2BDE8000485B5 /* LanguageNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageNAVController.h; sourceTree = "<group>"; };
+		DAAFF6791CB2BDE8000485B5 /* LanguageNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageNAVController.m; sourceTree = "<group>"; };
+		DAAFF67B1CB2C511000485B5 /* PWDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDNavigationController.h; sourceTree = "<group>"; };
+		DAAFF67C1CB2C511000485B5 /* PWDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDNavigationController.m; sourceTree = "<group>"; };
+		DAAFF67D1CB2C511000485B5 /* PWDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWDViewController.h; sourceTree = "<group>"; };
+		DAAFF67E1CB2C511000485B5 /* PWDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWDViewController.m; sourceTree = "<group>"; };
+		DACDB3471DE71F4100449F17 /* CycleNAVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleNAVController.h; sourceTree = "<group>"; };
+		DACDB3481DE71F4100449F17 /* CycleNAVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleNAVController.m; sourceTree = "<group>"; };
+		DACDB34A1DE71F5900449F17 /* CycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleViewController.h; sourceTree = "<group>"; };
+		DACDB34B1DE71F5900449F17 /* CycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleViewController.m; sourceTree = "<group>"; };
+		DACDB34E1DE7276F00449F17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +217,18 @@
 		DAAFF57E1CB25EC6000485B5 /* RTU5023 */ = {
 			isa = PBXGroup;
 			children = (
-				DAAFF5821CB25EC6000485B5 /* AppDelegate.h */,
-				DAAFF5831CB25EC6000485B5 /* AppDelegate.m */,
-				DAAFF5851CB25EC6000485B5 /* ViewController.h */,
-				DAAFF5861CB25EC6000485B5 /* ViewController.m */,
+				DAAFF6621CB2ADE0000485B5 /* set_alarm */,
+				DAAFF64F1CB29684000485B5 /* set */,
+				DAAFF62E1CB2628C000485B5 /* host */,
+				DAAFF6211CB2626D000485B5 /* app_pwd */,
+				DAAFF6141CB26246000485B5 /* add_edit */,
+				DAAFF6101CB26148000485B5 /* unitl */,
+				DAAFF6071CB2613A000485B5 /* AppDelegate.h */,
+				DAAFF6081CB2613A000485B5 /* AppDelegate.m */,
+				DAAFF6091CB2613A000485B5 /* NavigationController.h */,
+				DAAFF60A1CB2613A000485B5 /* NavigationController.m */,
+				DAAFF60B1CB2613A000485B5 /* ViewController.h */,
+				DAAFF60C1CB2613A000485B5 /* ViewController.m */,
 				DAAFF5881CB25EC6000485B5 /* Main.storyboard */,
 				DAAFF58B1CB25EC6000485B5 /* Assets.xcassets */,
 				DAAFF58D1CB25EC6000485B5 /* LaunchScreen.storyboard */,
@@ -118,6 +242,8 @@
 			isa = PBXGroup;
 			children = (
 				DAAFF5801CB25EC6000485B5 /* main.m */,
+				DA9035481CB3A7F600FD63A1 /* Localizable.strings */,
+				DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +264,118 @@
 				DAAFF5A61CB25EC7000485B5 /* Info.plist */,
 			);
 			path = RTU5023UITests;
+			sourceTree = "<group>";
+		};
+		DAAFF6101CB26148000485B5 /* unitl */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF6111CB26153000485B5 /* Unitl.h */,
+				DAAFF6121CB26153000485B5 /* Unitl.m */,
+			);
+			name = unitl;
+			sourceTree = "<group>";
+		};
+		DAAFF6141CB26246000485B5 /* add_edit */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF6151CB26258000485B5 /* AddNavigationController.h */,
+				DAAFF6161CB26258000485B5 /* AddNavigationController.m */,
+				DAAFF6171CB26258000485B5 /* AddViewController.h */,
+				DAAFF6181CB26258000485B5 /* AddViewController.m */,
+				DAAFF6191CB26258000485B5 /* TypeNavigationController.h */,
+				DAAFF61A1CB26258000485B5 /* TypeNavigationController.m */,
+				DAAFF61B1CB26258000485B5 /* TypeViewController.h */,
+				DAAFF61C1CB26258000485B5 /* TypeViewController.m */,
+			);
+			name = add_edit;
+			sourceTree = "<group>";
+		};
+		DAAFF6211CB2626D000485B5 /* app_pwd */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF6221CB26275000485B5 /* AppPWDNavigationController.h */,
+				DAAFF6231CB26275000485B5 /* AppPWDNavigationController.m */,
+				DAAFF6241CB26275000485B5 /* AppPWDViewController.h */,
+				DAAFF6251CB26275000485B5 /* AppPWDViewController.m */,
+				DAAFF6261CB26275000485B5 /* SetPWDNavigationController.h */,
+				DAAFF6271CB26275000485B5 /* SetPWDNavigationController.m */,
+				DAAFF6281CB26275000485B5 /* SetPWDViewController.h */,
+				DAAFF6291CB26275000485B5 /* SetPWDViewController.m */,
+			);
+			name = app_pwd;
+			sourceTree = "<group>";
+		};
+		DAAFF62E1CB2628C000485B5 /* host */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF62F1CB2629C000485B5 /* HostNavigationController.h */,
+				DAAFF6301CB2629C000485B5 /* HostNavigationController.m */,
+				DAAFF6311CB2629C000485B5 /* HostPageController.h */,
+				DAAFF6321CB2629C000485B5 /* HostPageController.m */,
+				DAAFF6351CB262FB000485B5 /* HostViewController.h */,
+				DAAFF6361CB262FB000485B5 /* HostViewController.m */,
+				DAAFF6371CB262FB000485B5 /* SetP1ViewController.h */,
+				DAAFF6381CB262FB000485B5 /* SetP1ViewController.m */,
+				DAAFF6431CB26E00000485B5 /* Host_SetNavigationController.h */,
+				DAAFF6441CB26E00000485B5 /* Host_SetNavigationController.m */,
+				DAAFF6461CB26E16000485B5 /* Host_SetViewController.h */,
+				DAAFF6471CB26E16000485B5 /* Host_SetViewController.m */,
+				DAAFF64C1CB2770D000485B5 /* Host_RECO_NAVController.h */,
+				DAAFF64D1CB2770D000485B5 /* Host_RECO_NAVController.m */,
+				DAAFF6491CB276F4000485B5 /* Host_RECOViewController.h */,
+				DAAFF64A1CB276F4000485B5 /* Host_RECOViewController.m */,
+			);
+			name = host;
+			sourceTree = "<group>";
+		};
+		DAAFF64F1CB29684000485B5 /* set */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF6501CB29734000485B5 /* RTUNavigationController.h */,
+				DAAFF6511CB29734000485B5 /* RTUNavigationController.m */,
+				DAAFF6521CB29734000485B5 /* RTUViewController.h */,
+				DAAFF6531CB29734000485B5 /* RTUViewController.m */,
+				DAAFF6561CB29AA1000485B5 /* UserNavigationController.h */,
+				DAAFF6571CB29AA1000485B5 /* UserNavigationController.m */,
+				DAAFF6581CB29AA1000485B5 /* UserViewController.h */,
+				DAAFF6591CB29AA1000485B5 /* UserViewController.m */,
+				DAAFF65C1CB2A460000485B5 /* SetAlarmNAVController.h */,
+				DAAFF65D1CB2A460000485B5 /* SetAlarmNAVController.m */,
+				DAAFF65F1CB2A47D000485B5 /* SetAlarmViewController.h */,
+				DAAFF6601CB2A47D000485B5 /* SetAlarmViewController.m */,
+				DAAFF6691CB2B613000485B5 /* DailyNavigationController.h */,
+				DAAFF66A1CB2B613000485B5 /* DailyNavigationController.m */,
+				DAAFF66B1CB2B613000485B5 /* DailyViewController.h */,
+				DAAFF66C1CB2B613000485B5 /* DailyViewController.m */,
+				DAAFF66F1CB2B94B000485B5 /* AutoNAVController.h */,
+				DAAFF6701CB2B94B000485B5 /* AutoNAVController.m */,
+				DAAFF6721CB2B960000485B5 /* AutoViewController.h */,
+				DAAFF6731CB2B960000485B5 /* AutoViewController.m */,
+				DAAFF6781CB2BDE8000485B5 /* LanguageNAVController.h */,
+				DAAFF6791CB2BDE8000485B5 /* LanguageNAVController.m */,
+				DAAFF6751CB2BDC6000485B5 /* LanguageViewController.h */,
+				DAAFF6761CB2BDC6000485B5 /* LanguageViewController.m */,
+				DAAFF67B1CB2C511000485B5 /* PWDNavigationController.h */,
+				DAAFF67C1CB2C511000485B5 /* PWDNavigationController.m */,
+				DAAFF67D1CB2C511000485B5 /* PWDViewController.h */,
+				DAAFF67E1CB2C511000485B5 /* PWDViewController.m */,
+				DACDB3471DE71F4100449F17 /* CycleNAVController.h */,
+				DACDB3481DE71F4100449F17 /* CycleNAVController.m */,
+				DACDB34A1DE71F5900449F17 /* CycleViewController.h */,
+				DACDB34B1DE71F5900449F17 /* CycleViewController.m */,
+			);
+			name = set;
+			sourceTree = "<group>";
+		};
+		DAAFF6621CB2ADE0000485B5 /* set_alarm */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFF6661CB2AE2F000485B5 /* SetTHNAVController.h */,
+				DAAFF6671CB2AE2F000485B5 /* SetTHNAVController.m */,
+				DAAFF6631CB2AE05000485B5 /* SetTHViewController.h */,
+				DAAFF6641CB2AE05000485B5 /* SetTHViewController.m */,
+			);
+			name = set_alarm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +445,8 @@
 				TargetAttributes = {
 					DAAFF57B1CB25EC6000485B5 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 55TTZWFS23;
+						ProvisioningStyle = Automatic;
 					};
 					DAAFF5941CB25EC6000485B5 = {
 						CreatedOnToolsVersion = 7.3;
@@ -225,6 +465,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DAAFF5731CB25EC6000485B5;
 			productRefGroup = DAAFF57D1CB25EC6000485B5 /* Products */;
@@ -243,9 +484,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */,
 				DAAFF58F1CB25EC6000485B5 /* LaunchScreen.storyboard in Resources */,
 				DAAFF58C1CB25EC6000485B5 /* Assets.xcassets in Resources */,
 				DAAFF58A1CB25EC6000485B5 /* Main.storyboard in Resources */,
+				DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +513,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAAFF5871CB25EC6000485B5 /* ViewController.m in Sources */,
-				DAAFF5841CB25EC6000485B5 /* AppDelegate.m in Sources */,
+				DAAFF60E1CB2613A000485B5 /* NavigationController.m in Sources */,
+				DAAFF67A1CB2BDE8000485B5 /* LanguageNAVController.m in Sources */,
+				DACDB34C1DE71F5900449F17 /* CycleViewController.m in Sources */,
+				DAAFF66E1CB2B613000485B5 /* DailyViewController.m in Sources */,
+				DAAFF61D1CB26258000485B5 /* AddNavigationController.m in Sources */,
+				DAAFF62C1CB26275000485B5 /* SetPWDNavigationController.m in Sources */,
+				DAAFF66D1CB2B613000485B5 /* DailyNavigationController.m in Sources */,
+				DAAFF62B1CB26275000485B5 /* AppPWDViewController.m in Sources */,
+				DAAFF62D1CB26275000485B5 /* SetPWDViewController.m in Sources */,
+				DAAFF60D1CB2613A000485B5 /* AppDelegate.m in Sources */,
+				DAAFF6451CB26E00000485B5 /* Host_SetNavigationController.m in Sources */,
+				DAAFF6681CB2AE2F000485B5 /* SetTHNAVController.m in Sources */,
+				DAAFF67F1CB2C511000485B5 /* PWDNavigationController.m in Sources */,
+				DAAFF62A1CB26275000485B5 /* AppPWDNavigationController.m in Sources */,
+				DAAFF6331CB2629C000485B5 /* HostNavigationController.m in Sources */,
+				DAAFF64B1CB276F4000485B5 /* Host_RECOViewController.m in Sources */,
+				DAAFF61F1CB26258000485B5 /* TypeNavigationController.m in Sources */,
+				DAAFF6771CB2BDC6000485B5 /* LanguageViewController.m in Sources */,
+				DAAFF6651CB2AE05000485B5 /* SetTHViewController.m in Sources */,
+				DACDB3491DE71F4100449F17 /* CycleNAVController.m in Sources */,
+				DAAFF6611CB2A47D000485B5 /* SetAlarmViewController.m in Sources */,
+				DAAFF6711CB2B94B000485B5 /* AutoNAVController.m in Sources */,
+				DAAFF6801CB2C511000485B5 /* PWDViewController.m in Sources */,
+				DAAFF61E1CB26258000485B5 /* AddViewController.m in Sources */,
+				DAAFF64E1CB2770D000485B5 /* Host_RECO_NAVController.m in Sources */,
+				DAAFF6481CB26E16000485B5 /* Host_SetViewController.m in Sources */,
+				DAAFF65E1CB2A460000485B5 /* SetAlarmNAVController.m in Sources */,
+				DAAFF60F1CB2613A000485B5 /* ViewController.m in Sources */,
+				DAAFF6541CB29734000485B5 /* RTUNavigationController.m in Sources */,
+				DAAFF65B1CB29AA1000485B5 /* UserViewController.m in Sources */,
+				DAAFF65A1CB29AA1000485B5 /* UserNavigationController.m in Sources */,
+				DAAFF6741CB2B960000485B5 /* AutoViewController.m in Sources */,
 				DAAFF5811CB25EC6000485B5 /* main.m in Sources */,
+				DAAFF6551CB29734000485B5 /* RTUViewController.m in Sources */,
+				DAAFF63A1CB262FB000485B5 /* SetP1ViewController.m in Sources */,
+				DAAFF6391CB262FB000485B5 /* HostViewController.m in Sources */,
+				DAAFF6201CB26258000485B5 /* TypeViewController.m in Sources */,
+				DAAFF6131CB26153000485B5 /* Unitl.m in Sources */,
+				DAAFF6341CB2629C000485B5 /* HostPageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +587,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA9035481CB3A7F600FD63A1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9035471CB3A7F600FD63A1 /* Base */,
+				DA9035491CB3A7F700FD63A1 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA90354B1CB3A7FC00FD63A1 /* Base */,
+				DA90354D1CB3A7FD00FD63A1 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DAAFF5881CB25EC6000485B5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DAAFF5891CB25EC6000485B5 /* Base */,
+				DACDB34E1DE7276F00449F17 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +618,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DAAFF58E1CB25EC6000485B5 /* Base */,
+				DA6394D11CB396E10017715D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -413,10 +712,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55TTZWFS23;
 				INFOPLIST_FILE = RTU5023/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsmalarmsystem.gsm.RTU5023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +730,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55TTZWFS23;
 				INFOPLIST_FILE = RTU5023/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsmalarmsystem.gsm.RTU5023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -496,6 +809,7 @@
 				DAAFF5AB1CB25EC7000485B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAAFF5AC1CB25EC7000485B5 /* Build configuration list for PBXNativeTarget "RTU5023Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +818,7 @@
 				DAAFF5AE1CB25EC7000485B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAAFF5AF1CB25EC7000485B5 /* Build configuration list for PBXNativeTarget "RTU5023UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +827,7 @@
 				DAAFF5B11CB25EC7000485B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

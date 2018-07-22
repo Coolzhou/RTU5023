@@ -1,0 +1,276 @@
+
+/* Class = "UILabel"; text = "Auto-report Interval"; ObjectID = "0Vb-cw-yaa"; */
+"0Vb-cw-yaa.text" = "设置间隔上报状态周期";
+
+/* Class = "UILabel"; text = "threshold"; ObjectID = "19Z-7j-3WD"; */
+"19Z-7j-3WD.text" = "报警阀值";
+
+/* Class = "UILabel"; text = "every"; ObjectID = "1AJ-2p-IPI"; */
+"1AJ-2p-IPI.text" = "每间隔";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "1Vb-5k-c6x"; */
+"1Vb-5k-c6x.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Auto-report Interval"; ObjectID = "1ga-Sc-gDK"; */
+"1ga-Sc-gDK.text" = "上报状态短信周期";
+
+/* Class = "UILabel"; text = "主机密码"; ObjectID = "1qR-5L-MDe"; */
+"1qR-5L-MDe.text" = "主机密码";
+
+/* Class = "UILabel"; text = "L"; ObjectID = "1xz-hB-qWb"; */
+"1xz-hB-qWb.text" = "低";
+
+/* Class = "UILabel"; text = "Setting Restart Cycle"; ObjectID = "5Hr-lX-OXH"; */
+"5Hr-lX-OXH.text" = "设置重启周期";
+
+/* Class = "UILabel"; text = "密码"; ObjectID = "5p7-ig-PeS"; */
+"5p7-ig-PeS.text" = "密码";
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "66p-yD-Z5k"; */
+"66p-yD-Z5k.text" = "湿度";
+
+/* Class = "UILabel"; text = "hour(s)"; ObjectID = "6GA-mb-MEt"; */
+"6GA-mb-MEt.text" = "小时";
+
+/* Class = "UILabel"; text = "Call to Inquiry Status"; ObjectID = "6Ig-ob-eWe"; */
+"6Ig-ob-eWe.text" = "呼入查询当前状态";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "6p4-U2-FUH"; */
+"6p4-U2-FUH.text" = "名称";
+
+/* Class = "UILabel"; text = "中文"; ObjectID = "7hn-h0-II6"; */
+"7hn-h0-II6.text" = "中文";
+
+/* Class = "UILabel"; text = "主机账户"; ObjectID = "8JB-Hz-a6o"; */
+"8JB-Hz-a6o.text" = "主机账户";
+
+/* Class = "UILabel"; text = "H"; ObjectID = "8ZB-vq-TKK"; */
+"8ZB-vq-TKK.text" = "高";
+
+/* Class = "UILabel"; text = "Voltage"; ObjectID = "CVJ-ea-4oZ"; */
+"CVJ-ea-4oZ.text" = "电压";
+
+/* Class = "UILabel"; text = "Modify Device Password"; ObjectID = "CbZ-0h-LGQ"; */
+"CbZ-0h-LGQ.text" = "密码修改";
+
+/* Class = "UILabel"; text = "Alarm Numbers"; ObjectID = "Dyz-hC-hH2"; */
+"Dyz-hC-hH2.text" = "设置用户号码";
+
+/* Class = "UILabel"; text = "Inquiry Status"; ObjectID = "EJV-TS-fqQ"; */
+"EJV-TS-fqQ.text" = "查询设备当前状态";
+
+/* Class = "UILabel"; text = "hour(s)."; ObjectID = "Edg-IK-hsd"; */
+"Edg-IK-hsd.text" = "小时发送1次";
+
+/* Class = "UILabel"; text = "Auto -report Interval"; ObjectID = "GvQ-OF-CBq"; */
+"GvQ-OF-CBq.text" = "设置间隔上报状态周期";
+
+/* Class = "UILabel"; text = "Setting Alarm Parameters"; ObjectID = "Hvs-do-Wyb"; */
+"Hvs-do-Wyb.text" = "设置温湿度以及电压参数";
+
+/* Class = "UILabel"; text = "records"; ObjectID = "IKI-eI-Gff"; */
+"IKI-eI-Gff.text" = "";
+
+/* Class = "UILabel"; text = "Setting Alarm Parameters"; ObjectID = "Iuw-cX-xOW"; */
+"Iuw-cX-xOW.text" = "设置温度湿度以及电压参数";
+
+/* Class = "UILabel"; text = "L"; ObjectID = "JWu-Ba-cQf"; */
+"JWu-Ba-cQf.text" = "低";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "KN8-Hq-Rmo"; */
+"KN8-Hq-Rmo.text" = "Title";
+
+/* Class = "UILabel"; text = "Old Password"; ObjectID = "Meo-X0-pQ2"; */
+"Meo-X0-pQ2.text" = "旧密码";
+
+/* Class = "UILabel"; text = "Ok"; ObjectID = "NId-lf-lWe"; */
+"NId-lf-lWe.text" = "Ok";
+
+/* Class = "UILabel"; text = "Year    Month    Day      Hour   Minute "; ObjectID = "PGc-Op-upX"; */
+"PGc-Op-upX.text" = "年          月         日          时         分 ";
+
+/* Class = "UILabel"; text = "主机的手机卡号"; ObjectID = "PRN-9d-56j"; */
+"PRN-9d-56j.text" = "主机的手机卡号";
+
+/* Class = "UILabel"; text = "One Key Reset"; ObjectID = "Ppv-Vr-uxO"; */
+"Ppv-Vr-uxO.text" = "一键复位（格式化）";
+
+/* Class = "UILabel"; text = "Daily Report Schedule"; ObjectID = "Qdz-EN-tON"; */
+"Qdz-EN-tON.text" = "状态短信日报时间";
+
+/* Class = "UILabel"; text = "Position"; ObjectID = "RcF-bZ-fne"; */
+"RcF-bZ-fne.text" = "序号";
+
+/* Class = "UILabel"; text = "RTU5023"; ObjectID = "Rud-ea-Nkw"; */
+"Rud-ea-Nkw.text" = "RTU5023";
+
+/* Class = "UILabel"; text = "Low"; ObjectID = "S6T-PI-eG6"; */
+"S6T-PI-eG6.text" = "低限";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "TG5-yl-D6N"; */
+"TG5-yl-D6N.text" = "1";
+
+/* Class = "UILabel"; text = "Inquiry Device Time"; ObjectID = "UcZ-fE-EOu"; */
+"UcZ-fE-EOu.text" = "查询设备当前时间";
+
+/* Class = "UILabel"; text = "开启"; ObjectID = "UfL-p1-XRI"; */
+"UfL-p1-XRI.text" = "开启";
+
+/* Class = "UILabel"; text = "保存"; ObjectID = "VOP-z4-A7I"; */
+"VOP-z4-A7I.text" = "保存";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Vja-6Q-2uZ"; */
+"Vja-6Q-2uZ.text" = "名称";
+
+/* Class = "UILabel"; text = "Set"; ObjectID = "Vob-5p-FGP"; */
+"Vob-5p-FGP.text" = "设置";
+
+/* Class = "UILabel"; text = "Alarm Numbers"; ObjectID = "WAa-V3-CUC"; */
+"WAa-V3-CUC.text" = "设置用户号码";
+
+/* Class = "UILabel"; text = "Sync RTU Time"; ObjectID = "WNU-50-DV1"; */
+"WNU-50-DV1.text" = "设置RTU时间";
+
+/* Class = "UILabel"; text = "Alarm Phone Number"; ObjectID = "WXH-uR-gB5"; */
+"WXH-uR-gB5.text" = "用户电话号码";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Xwc-em-wax"; */
+"Xwc-em-wax.text" = "设置版本";
+
+/* Class = "UILabel"; text = "Inquiry Settings"; ObjectID = "YcK-NT-JOQ"; */
+"YcK-NT-JOQ.text" = "查询设备状态参数";
+
+/* Class = "UILabel"; text = "添加主机账户"; ObjectID = "Yp0-1y-xs3"; */
+"Yp0-1y-xs3.text" = "添加主机账户";
+
+/* Class = "UILabel"; text = "Alarm Threshold"; ObjectID = "ZJe-dF-z8O"; */
+"ZJe-dF-z8O.text" = "报警阀值";
+
+/* Class = "UILabel"; text = "Inquiry Alarm Threshold"; ObjectID = "Zy0-yG-RZI"; */
+"Zy0-yG-RZI.text" = "查询报警高低阀值";
+
+/* Class = "UILabel"; text = "H"; ObjectID = "abB-23-UZw"; */
+"abB-23-UZw.text" = "高";
+
+/* Class = "UILabel"; text = "Daily Report Schedule"; ObjectID = "abu-oh-euG"; */
+"abu-oh-euG.text" = "设置日报时间";
+
+/* Class = "UILabel"; text = "Model"; ObjectID = "auK-Bu-EMp"; */
+"auK-Bu-EMp.text" = "型号";
+
+/* Class = "UILabel"; text = "L"; ObjectID = "bPX-NU-L6W"; */
+"bPX-NU-L6W.text" = "低";
+
+/* Class = "UILabel"; text = "Temperature"; ObjectID = "bfF-e5-0Fk"; */
+"bfF-e5-0Fk.text" = "温度";
+
+/* Class = "UILabel"; text = "Select device model"; ObjectID = "cCZ-Nd-AzV"; */
+"cCZ-Nd-AzV.text" = "选择设备型号";
+
+/* Class = "UILabel"; text = "Every"; ObjectID = "cEu-zy-oJf"; */
+"cEu-zy-oJf.text" = "每间隔";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "dJw-vg-Tkh"; */
+"dJw-vg-Tkh.text" = "设置版本";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "dXi-j3-ZvM"; */
+"dXi-j3-ZvM.text" = "3";
+
+/* Class = "UILabel"; text = "Delete"; ObjectID = "dgD-vk-Lrn"; */
+"dgD-vk-Lrn.text" = "删除";
+
+/* Class = "UILabel"; text = "Modify Device Password"; ObjectID = "fIQ-ks-eIR"; */
+"fIQ-ks-eIR.text" = "密码修改";
+
+/* Class = "UILabel"; text = "Inquiry"; ObjectID = "fWx-6m-cqF"; */
+"fWx-6m-cqF.text" = "Inquiry";
+
+/* Class = "UILabel"; text = "Query Restart Cycle"; ObjectID = "gNe-iT-1Tg"; */
+"gNe-iT-1Tg.text" = "查询重启周期";
+
+/* Class = "UILabel"; text = "Inquiry Alarm Records"; ObjectID = "hMK-a8-JxO"; */
+"hMK-a8-JxO.text" = "查询历史纪录";
+
+/* Class = "UILabel"; text = "Sync Device Time"; ObjectID = "hTg-Km-oJC"; */
+"hTg-Km-oJC.text" = "设置RTU时间";
+
+/* Class = "UILabel"; text = "Inquiry Name"; ObjectID = "htc-qm-hiF"; */
+"htc-qm-hiF.text" = "查询名称";
+
+/* Class = "UILabel"; text = "Inquiry the last"; ObjectID = "izi-VI-GRA"; */
+"izi-VI-GRA.text" = "条数";
+
+/* Class = "UILabel"; text = "关闭"; ObjectID = "j3t-AA-NDd"; */
+"j3t-AA-NDd.text" = "关闭";
+
+/* Class = "UINavigationItem"; title = "GSM报警器"; ObjectID = "jfu-fK-wc0"; */
+"jfu-fK-wc0.title" = "GSM报警器";
+
+/* Class = "UILabel"; text = "Arm"; ObjectID = "kbG-BK-pbR"; */
+"kbG-BK-pbR.text" = "设防";
+
+/* Class = "UILabel"; text = "New Password"; ObjectID = "lEi-6m-XAO"; */
+"lEi-6m-XAO.text" = "新密码";
+
+/* Class = "UILabel"; text = "Inquiry"; ObjectID = "nDT-DR-4Ji"; */
+"nDT-DR-4Ji.text" = "查询";
+
+/* Class = "UILabel"; text = "Remarks"; ObjectID = "noj-NQ-bsn"; */
+"noj-NQ-bsn.text" = "备注";
+
+/* Class = "UILabel"; text = "Disarm"; ObjectID = "ocg-Me-x33"; */
+"ocg-Me-x33.text" = "撤防";
+
+/* Class = "UILabel"; text = "High"; ObjectID = "oje-RM-2YH"; */
+"oje-RM-2YH.text" = "高限";
+
+/* Class = "UILabel"; text = "Inquiry Settings"; ObjectID = "pBH-fE-EW0"; */
+"pBH-fE-EW0.text" = "查询设备状态参数";
+
+/* Class = "UILabel"; text = "One Key To Restart"; ObjectID = "pCU-MC-lRI"; */
+"pCU-MC-lRI.text" = "一键重启";
+
+/* Class = "UILabel"; text = "添加主机账户"; ObjectID = "pfQ-7d-4gt"; */
+"pfQ-7d-4gt.text" = "添加主机账户";
+
+/* Class = "UILabel"; text = "Daily Report Schedule"; ObjectID = "qD7-l6-l6R"; */
+"qD7-l6-l6R.text" = "设置日报时间点";
+
+/* Class = "UILabel"; text = "Setting Restart Cycle"; ObjectID = "qeW-QD-kBe"; */
+"qeW-QD-kBe.text" = "设置重启周期";
+
+/* Class = "UILabel"; text = "H"; ObjectID = "rnh-Mv-diP"; */
+"rnh-Mv-diP.text" = "高";
+
+/* Class = "UILabel"; text = "Delete"; ObjectID = "sff-rb-V9y"; */
+"sff-rb-V9y.text" = "删除";
+
+/* Class = "UILabel"; text = "主机名"; ObjectID = "tQp-LJ-f8I"; */
+"tQp-LJ-f8I.text" = "主机名";
+
+/* Class = "UILabel"; text = "Inquiry Alarm Records"; ObjectID = "uPw-RD-Y0A"; */
+"uPw-RD-Y0A.text" = "查询历史记录";
+
+/* Class = "UILabel"; text = "auto restart"; ObjectID = "vh9-89-xZf"; */
+"vh9-89-xZf.text" = "自动重启";
+
+/* Class = "UILabel"; text = "请输入密码"; ObjectID = "wdS-I4-vNn"; */
+"wdS-I4-vNn.text" = "请输入密码";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "y4J-Kt-pgI"; */
+"y4J-Kt-pgI.text" = "English";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "yBe-ge-XhO"; */
+"yBe-ge-XhO.text" = "2";
+
+/* Class = "UILabel"; text = "Add"; ObjectID = "yHT-c7-hkN"; */
+"yHT-c7-hkN.text" = "增加";
+
+/* Class = "UILabel"; text = "Device send auto-report SMS message to the 1st position alarm number"; ObjectID = "yKO-i9-UIy"; */
+"yKO-i9-UIy.text" = "设置发送状态短信给第一个用户号码的间隔时间";
+
+/* Class = "UITextField"; text = "1234"; ObjectID = "yLT-Hu-kFF"; */
+"yLT-Hu-kFF.text" = "1234";
+
+/* Class = "UILabel"; text = "H      S"; ObjectID = "zq3-1s-gfy"; */
+"zq3-1s-gfy.text" = "时      分";

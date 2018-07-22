@@ -19,6 +19,7 @@
     Unitl *u;
     NSMutableArray *hostACs;
     UILabel *leftL;
+    
 }
 
 @end

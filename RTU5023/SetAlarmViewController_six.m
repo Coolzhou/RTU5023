@@ -1,28 +1,23 @@
 //
-//  Hot_Set_ViewController_seven.m
+//  SetAlarmViewController_six.m
 //  RTU5023
 //
-//  Created by zhou on 2018/7/23.
+//  Created by zhou on 2018/7/24.
 //  Copyright © 2018年 paul. All rights reserved.
 //
 
-#import "Hot_Set_ViewController_seven.h"
+#import "SetAlarmViewController_six.h"
 
-@interface Hot_Set_ViewController_seven ()
+@interface SetAlarmViewController_six ()
 
 @end
 
-@implementation Hot_Set_ViewController_seven
+@implementation SetAlarmViewController_six
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (IBAction)clickAIMBtnSender:(UIButton *)sender {
-}
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

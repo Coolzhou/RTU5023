@@ -10,6 +10,8 @@
 #import "AppDelegate.h"
 #import "Host_SetNavigationController.h"
 #import "Host_RECO_NAVController.h"
+#import "Hot_Set_ViewController_sixs.h"
+#import "Hot_Set_ViewController_sevens.h"
 
 @interface HostViewController (){
     
@@ -71,8 +73,18 @@ AppDelegate *hostV_app;
 
 //查询设备状态参数
 - (IBAction)hostRelayClick:(id)sender {
-    Host_SetNavigationController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"host_set"];
-    [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+    
+    if ([hostV_app.sel_host_type isEqualToString:@"RTU5023"]) {
+        Host_SetNavigationController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"host_set"];
+        [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+    }else if ([hostV_app.sel_host_type isEqualToString:@"RTU5026"]){
+        Hot_Set_ViewController_sixs *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"Hot_Set_ViewController_sixs"];
+        [self.navigationController pushViewController:hnc animated:YES];
+    }else if ([hostV_app.sel_host_type isEqualToString:@"RTU5027"]){
+        Hot_Set_ViewController_sevens *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"Hot_Set_ViewController_seven"];
+        [self.navigationController pushViewController:hnc animated:YES];
+    }else{
+    }
 }
 
 - (IBAction)hostAINClick:(id)sender {

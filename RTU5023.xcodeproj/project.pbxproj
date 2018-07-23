@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CBEE5F5F2104EE3400D046CA /* Hot_Set_ViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */; };
-		CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */; };
+		CBE3A4BF210698640060BF8C /* Hot_Set_ViewController_sixs.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */; };
+		CBE3A4C621069F490060BF8C /* SetAlarmViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */; };
+		CBE3A4C921069F580060BF8C /* SetAlarmViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */; };
+		CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_sevens.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */; };
 		DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9035481CB3A7F600FD63A1 /* Localizable.strings */; };
 		DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */; };
 		DAAFF5811CB25EC6000485B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5801CB25EC6000485B5 /* main.m */; };
@@ -75,10 +77,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CBEE5F5D2104EE3400D046CA /* Hot_Set_ViewController_six.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_six.h; sourceTree = "<group>"; };
-		CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_six.m; sourceTree = "<group>"; };
-		CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_seven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_seven.h; sourceTree = "<group>"; };
-		CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_seven.m; sourceTree = "<group>"; };
+		CBE3A4BD210698640060BF8C /* Hot_Set_ViewController_sixs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_sixs.h; sourceTree = "<group>"; };
+		CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_sixs.m; sourceTree = "<group>"; };
+		CBE3A4C021069ADE0060BF8C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CBE3A4C121069B950060BF8C /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		CBE3A4C421069F490060BF8C /* SetAlarmViewController_six.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_six.h; sourceTree = "<group>"; };
+		CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
+		CBE3A4C721069F580060BF8C /* SetAlarmViewController_seven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_seven.h; sourceTree = "<group>"; };
+		CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_seven.m; sourceTree = "<group>"; };
+		CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_sevens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_sevens.h; sourceTree = "<group>"; };
+		CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_sevens.m; sourceTree = "<group>"; };
 		DA6394D11CB396E10017715D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA9035471CB3A7F600FD63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA9035491CB3A7F700FD63A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -200,11 +208,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBE3A4C221069F190060BF8C /* 5026 */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3A4C421069F490060BF8C /* SetAlarmViewController_six.h */,
+				CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */,
+			);
+			name = 5026;
+			sourceTree = "<group>";
+		};
+		CBE3A4C321069F210060BF8C /* 5027 */ = {
+			isa = PBXGroup;
+			children = (
+				CBE3A4C721069F580060BF8C /* SetAlarmViewController_seven.h */,
+				CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */,
+			);
+			name = 5027;
+			sourceTree = "<group>";
+		};
 		CBEE5F5A2104EDC600D046CA /* 5026 */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE5F5D2104EE3400D046CA /* Hot_Set_ViewController_six.h */,
-				CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */,
+				CBE3A4BD210698640060BF8C /* Hot_Set_ViewController_sixs.h */,
+				CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */,
 			);
 			name = 5026;
 			sourceTree = "<group>";
@@ -212,8 +238,8 @@
 		CBEE5F5B2104EDD300D046CA /* 5027 */ = {
 			isa = PBXGroup;
 			children = (
-				CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_seven.h */,
-				CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */,
+				CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_sevens.h */,
+				CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */,
 			);
 			name = 5027;
 			sourceTree = "<group>";
@@ -260,6 +286,8 @@
 				DAAFF60A1CB2613A000485B5 /* NavigationController.m */,
 				DAAFF60B1CB2613A000485B5 /* ViewController.h */,
 				DAAFF60C1CB2613A000485B5 /* ViewController.m */,
+				CBE3A4C021069ADE0060BF8C /* PrefixHeader.pch */,
+				CBE3A4C121069B950060BF8C /* Common.h */,
 				DAAFF5881CB25EC6000485B5 /* Main.storyboard */,
 				DAAFF58B1CB25EC6000485B5 /* Assets.xcassets */,
 				DAAFF58D1CB25EC6000485B5 /* LaunchScreen.storyboard */,
@@ -365,6 +393,8 @@
 		DAAFF64F1CB29684000485B5 /* set */ = {
 			isa = PBXGroup;
 			children = (
+				CBE3A4C321069F210060BF8C /* 5027 */,
+				CBE3A4C221069F190060BF8C /* 5026 */,
 				DAAFF6501CB29734000485B5 /* RTUNavigationController.h */,
 				DAAFF6511CB29734000485B5 /* RTUNavigationController.m */,
 				DAAFF6521CB29734000485B5 /* RTUViewController.h */,
@@ -547,22 +577,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE3A4C921069F580060BF8C /* SetAlarmViewController_seven.m in Sources */,
 				DAAFF60E1CB2613A000485B5 /* NavigationController.m in Sources */,
 				DAAFF67A1CB2BDE8000485B5 /* LanguageNAVController.m in Sources */,
 				DACDB34C1DE71F5900449F17 /* CycleViewController.m in Sources */,
 				DAAFF66E1CB2B613000485B5 /* DailyViewController.m in Sources */,
 				DAAFF61D1CB26258000485B5 /* AddNavigationController.m in Sources */,
 				DAAFF62C1CB26275000485B5 /* SetPWDNavigationController.m in Sources */,
+				CBE3A4C621069F490060BF8C /* SetAlarmViewController_six.m in Sources */,
 				DAAFF66D1CB2B613000485B5 /* DailyNavigationController.m in Sources */,
 				DAAFF62B1CB26275000485B5 /* AppPWDViewController.m in Sources */,
 				DAAFF62D1CB26275000485B5 /* SetPWDViewController.m in Sources */,
 				DAAFF60D1CB2613A000485B5 /* AppDelegate.m in Sources */,
+				CBE3A4BF210698640060BF8C /* Hot_Set_ViewController_sixs.m in Sources */,
 				DAAFF6451CB26E00000485B5 /* Host_SetNavigationController.m in Sources */,
 				DAAFF6681CB2AE2F000485B5 /* SetTHNAVController.m in Sources */,
 				DAAFF67F1CB2C511000485B5 /* PWDNavigationController.m in Sources */,
 				DAAFF62A1CB26275000485B5 /* AppPWDNavigationController.m in Sources */,
-				CBEE5F5F2104EE3400D046CA /* Hot_Set_ViewController_six.m in Sources */,
-				CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_seven.m in Sources */,
+				CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_sevens.m in Sources */,
 				DAAFF6331CB2629C000485B5 /* HostNavigationController.m in Sources */,
 				DAAFF64B1CB276F4000485B5 /* Host_RECOViewController.m in Sources */,
 				DAAFF61F1CB26258000485B5 /* TypeNavigationController.m in Sources */,
@@ -752,6 +784,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55TTZWFS23;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -770,6 +803,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55TTZWFS23;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

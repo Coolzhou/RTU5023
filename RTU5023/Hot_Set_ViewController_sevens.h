@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Hot_Set_ViewController_seven : UIViewController
+@interface Hot_Set_ViewController_sevens : UIViewController
 
 @end

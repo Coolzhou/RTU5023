@@ -75,6 +75,8 @@ AppDelegate *setP1_app;
     [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
     
 }
+
+//设置温度电压参数
 - (IBAction)setP1_setClick:(id)sender{
     SetAlarmNAVController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"seta"];
     [self.navigationController pushViewController:hnc.visibleViewController animated:YES];

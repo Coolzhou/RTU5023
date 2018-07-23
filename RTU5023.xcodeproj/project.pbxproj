@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBEE5F5F2104EE3400D046CA /* Hot_Set_ViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */; };
+		CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */; };
 		DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9035481CB3A7F600FD63A1 /* Localizable.strings */; };
 		DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */; };
 		DAAFF5811CB25EC6000485B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAFF5801CB25EC6000485B5 /* main.m */; };
@@ -73,6 +75,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CBEE5F5D2104EE3400D046CA /* Hot_Set_ViewController_six.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_six.h; sourceTree = "<group>"; };
+		CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_six.m; sourceTree = "<group>"; };
+		CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_seven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_seven.h; sourceTree = "<group>"; };
+		CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_seven.m; sourceTree = "<group>"; };
 		DA6394D11CB396E10017715D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DA9035471CB3A7F600FD63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA9035491CB3A7F700FD63A1 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -194,6 +200,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CBEE5F5A2104EDC600D046CA /* 5026 */ = {
+			isa = PBXGroup;
+			children = (
+				CBEE5F5D2104EE3400D046CA /* Hot_Set_ViewController_six.h */,
+				CBEE5F5E2104EE3400D046CA /* Hot_Set_ViewController_six.m */,
+			);
+			name = 5026;
+			sourceTree = "<group>";
+		};
+		CBEE5F5B2104EDD300D046CA /* 5027 */ = {
+			isa = PBXGroup;
+			children = (
+				CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_seven.h */,
+				CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_seven.m */,
+			);
+			name = 5027;
+			sourceTree = "<group>";
+		};
+		CBEE5F5C2104EDE300D046CA /* 5028 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 5028;
+			sourceTree = "<group>";
+		};
 		DAAFF5731CB25EC6000485B5 = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +339,9 @@
 		DAAFF62E1CB2628C000485B5 /* host */ = {
 			isa = PBXGroup;
 			children = (
+				CBEE5F5C2104EDE300D046CA /* 5028 */,
+				CBEE5F5B2104EDD300D046CA /* 5027 */,
+				CBEE5F5A2104EDC600D046CA /* 5026 */,
 				DAAFF62F1CB2629C000485B5 /* HostNavigationController.h */,
 				DAAFF6301CB2629C000485B5 /* HostNavigationController.m */,
 				DAAFF6311CB2629C000485B5 /* HostPageController.h */,
@@ -527,6 +561,8 @@
 				DAAFF6681CB2AE2F000485B5 /* SetTHNAVController.m in Sources */,
 				DAAFF67F1CB2C511000485B5 /* PWDNavigationController.m in Sources */,
 				DAAFF62A1CB26275000485B5 /* AppPWDNavigationController.m in Sources */,
+				CBEE5F5F2104EE3400D046CA /* Hot_Set_ViewController_six.m in Sources */,
+				CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_seven.m in Sources */,
 				DAAFF6331CB2629C000485B5 /* HostNavigationController.m in Sources */,
 				DAAFF64B1CB276F4000485B5 /* Host_RECOViewController.m in Sources */,
 				DAAFF61F1CB26258000485B5 /* TypeNavigationController.m in Sources */,

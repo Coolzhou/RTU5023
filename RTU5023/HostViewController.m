@@ -68,6 +68,8 @@ AppDelegate *hostV_app;
     [self.view addSubview:callWebview];
 }
 
+
+//查询设备状态参数
 - (IBAction)hostRelayClick:(id)sender {
     Host_SetNavigationController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"host_set"];
     [self.navigationController pushViewController:hnc.visibleViewController animated:YES];

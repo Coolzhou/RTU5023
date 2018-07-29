@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Hot_Set_ViewController_eight : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

@@ -32,6 +32,74 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
 }
 
+//时间
+- (IBAction)clickChaBtn1:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINQ", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+- (IBAction)clickSetupBtn1:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AIN1Q%@", THEAPPDELEGATE.sel_host_pwd,self.textField1.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickSetupBtn2:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AIN2Q%@", THEAPPDELEGATE.sel_host_pwd,self.textField2.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+//内容
+
+- (IBAction)clickChaBtn2:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINA", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+- (IBAction)clickSetupBtn3:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINA1T%@", THEAPPDELEGATE.sel_host_pwd,self.textField3.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickSetupBtn4:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINA2T%@", THEAPPDELEGATE.sel_host_pwd,self.textField4.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+
+//恢复内容
+- (IBAction)clickChaBtn3:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINN", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+- (IBAction)clickSetupBtn5:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINN1T%@", THEAPPDELEGATE.sel_host_pwd,self.textField5.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickSetupBtn6:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINN2T%@", THEAPPDELEGATE.sel_host_pwd,self.textField6.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+//设备名称
+- (IBAction)clickChaBtn4:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@DN", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+- (IBAction)clickSetupBtn7:(UIButton *)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@DN%@", THEAPPDELEGATE.sel_host_pwd,self.textField7.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -4030,6 +4030,9 @@
                                                                     <constraint firstAttribute="width" constant="25" id="dSE-wP-NFd"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn1:" destination="cVc-uM-LcN" eventType="touchUpInside" id="ZJv-di-ym8"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="端口号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVT-d9-GjX">
                                                                 <rect key="frame" x="15" y="65" width="43" height="17"/>
@@ -4058,6 +4061,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn1:" destination="cVc-uM-LcN" eventType="touchUpInside" id="4gz-3f-uuS"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6W-oh-7Mu">
                                                                 <rect key="frame" x="145" y="94.5" width="50" height="20"/>
@@ -4075,6 +4081,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickDelBtn:" destination="cVc-uM-LcN" eventType="touchUpInside" id="GJt-fa-KzG"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4132,6 +4141,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn2:" destination="cVc-uM-LcN" eventType="touchUpInside" id="KNK-Xk-B3i"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaF-jQ-IlX">
                                                                 <rect key="frame" x="145" y="96" width="50" height="20"/>
@@ -4149,16 +4161,10 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickDelBtn2:" destination="cVc-uM-LcN" eventType="touchUpInside" id="rc8-l3-ff5"/>
+                                                                </connections>
                                                             </button>
-                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kbg-xB-FyK">
-                                                                <rect key="frame" x="83" y="26" width="92" height="60"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="Vae-Mh-e9L"/>
-                                                                </constraints>
-                                                                <date key="date" timeIntervalSinceReferenceDate="554251127.85805905">
-                                                                    <!--2018-07-25 22:38:47 +0000-->
-                                                                </date>
-                                                            </datePicker>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-aF-U1Y">
                                                                 <rect key="frame" x="195" y="29" width="25" height="25"/>
                                                                 <constraints>
@@ -4166,26 +4172,33 @@
                                                                     <constraint firstAttribute="height" constant="25" id="ODA-Q6-UvA"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn2:" destination="cVc-uM-LcN" eventType="touchUpInside" id="6ld-Qy-xCJ"/>
+                                                                </connections>
                                                             </button>
+                                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G34-uQ-nNq">
+                                                                <rect key="frame" x="92" y="20" width="83" height="66"/>
+                                                            </pickerView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstItem="SXS-aF-U1Y" firstAttribute="leading" secondItem="G34-uQ-nNq" secondAttribute="trailing" constant="20" id="240-sF-dMI"/>
                                                             <constraint firstItem="RaF-jQ-IlX" firstAttribute="centerY" secondItem="KH6-Mn-os4" secondAttribute="centerY" id="BkF-6h-bsy"/>
                                                             <constraint firstItem="RaF-jQ-IlX" firstAttribute="width" secondItem="KH6-Mn-os4" secondAttribute="width" id="EvH-br-uOA"/>
                                                             <constraint firstItem="wfw-MN-MVE" firstAttribute="leading" secondItem="LBb-xx-dwz" secondAttribute="leading" constant="15" id="Fcq-jd-Bd0"/>
+                                                            <constraint firstAttribute="bottom" secondItem="KH6-Mn-os4" secondAttribute="bottom" constant="12" id="Htt-XH-h2F"/>
                                                             <constraint firstItem="RaF-jQ-IlX" firstAttribute="height" secondItem="KH6-Mn-os4" secondAttribute="height" id="IIY-QJ-PRi"/>
+                                                            <constraint firstItem="G34-uQ-nNq" firstAttribute="leading" secondItem="nAd-oo-87c" secondAttribute="trailing" constant="20" id="Jtg-cQ-94W"/>
                                                             <constraint firstItem="nAd-oo-87c" firstAttribute="leading" secondItem="wfw-MN-MVE" secondAttribute="leading" id="Mjh-GP-Z1f"/>
-                                                            <constraint firstItem="kbg-xB-FyK" firstAttribute="top" secondItem="LBb-xx-dwz" secondAttribute="top" constant="26" id="VfV-6c-4aM"/>
                                                             <constraint firstItem="wfw-MN-MVE" firstAttribute="top" secondItem="LBb-xx-dwz" secondAttribute="top" constant="5" id="Vw9-QH-EzA"/>
                                                             <constraint firstItem="nAd-oo-87c" firstAttribute="top" secondItem="wfw-MN-MVE" secondAttribute="bottom" constant="10" id="XFr-9A-4EF"/>
                                                             <constraint firstItem="SXS-aF-U1Y" firstAttribute="centerY" secondItem="nAd-oo-87c" secondAttribute="centerY" id="XVE-nj-Q1H"/>
                                                             <constraint firstItem="RaF-jQ-IlX" firstAttribute="centerX" secondItem="LBb-xx-dwz" secondAttribute="centerX" constant="50" id="XlN-BB-mQh"/>
-                                                            <constraint firstItem="kbg-xB-FyK" firstAttribute="leading" secondItem="nAd-oo-87c" secondAttribute="trailing" constant="10" id="cIM-ZL-lio"/>
-                                                            <constraint firstItem="RaF-jQ-IlX" firstAttribute="top" secondItem="kbg-xB-FyK" secondAttribute="bottom" constant="10" id="hOj-tL-u9B"/>
+                                                            <constraint firstItem="G34-uQ-nNq" firstAttribute="top" secondItem="LBb-xx-dwz" secondAttribute="top" constant="20" id="jxb-fp-Ioc"/>
                                                             <constraint firstAttribute="height" constant="128" id="pId-U0-Kav"/>
                                                             <constraint firstAttribute="trailing" secondItem="SXS-aF-U1Y" secondAttribute="trailing" constant="20" id="ql6-kj-IHc"/>
-                                                            <constraint firstItem="SXS-aF-U1Y" firstAttribute="leading" secondItem="kbg-xB-FyK" secondAttribute="trailing" constant="20" id="raA-hw-C7B"/>
                                                             <constraint firstItem="KH6-Mn-os4" firstAttribute="centerX" secondItem="LBb-xx-dwz" secondAttribute="centerX" constant="-50" id="yAK-GS-awq"/>
+                                                            <constraint firstItem="RaF-jQ-IlX" firstAttribute="top" secondItem="G34-uQ-nNq" secondAttribute="bottom" constant="10" id="zuU-on-Jvl"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-ZP-VL3">
@@ -4218,6 +4231,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="GhY-Hv-zQg"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn3:" destination="cVc-uM-LcN" eventType="touchUpInside" id="gm9-fc-jhc"/>
+                                                                </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4k0-yU-FFB">
                                                                 <rect key="frame" x="15" y="22.5" width="105" height="20"/>
@@ -4244,6 +4260,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn3:" destination="cVc-uM-LcN" eventType="touchUpInside" id="Cif-FA-Vhj"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心跳包内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc9-Zh-WHh">
                                                                 <rect key="frame" x="15" y="45.5" width="61.5" height="14.5"/>
@@ -4258,6 +4277,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="wgG-ly-bcE"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn4:" destination="cVc-uM-LcN" eventType="touchUpInside" id="0vD-64-wJP"/>
+                                                                </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ACK" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-rL-O6U">
                                                                 <rect key="frame" x="15" y="63" width="105" height="20"/>
@@ -4284,6 +4306,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn4:" destination="cVc-uM-LcN" eventType="touchUpInside" id="tnp-li-gbs"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心跳包周期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGe-8K-4gV">
                                                                 <rect key="frame" x="15" y="86" width="61.5" height="14.5"/>
@@ -4298,6 +4323,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="xZV-Xf-pgo"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn5:" destination="cVc-uM-LcN" eventType="touchUpInside" id="IMt-Eb-sMa"/>
+                                                                </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0~9999秒" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0CZ-ma-cW8">
                                                                 <rect key="frame" x="15" y="103" width="105" height="20"/>
@@ -4324,6 +4352,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn5:" destination="cVc-uM-LcN" eventType="touchUpInside" id="opF-fE-svy"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="掉线重连时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAQ-eq-2wl">
                                                                 <rect key="frame" x="15" y="126" width="74" height="14.5"/>
@@ -4338,6 +4369,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="wCR-92-Zm6"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn6:" destination="cVc-uM-LcN" eventType="touchUpInside" id="viA-uR-qXh"/>
+                                                                </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="60~65535秒" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmU-cF-FGl">
                                                                 <rect key="frame" x="15" y="143" width="105" height="20"/>
@@ -4364,6 +4398,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn6:" destination="cVc-uM-LcN" eventType="touchUpInside" id="JHe-mw-eJ6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4430,6 +4467,9 @@
                                                                 <integer key="value" value="6"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clickAgainBtn:" destination="cVc-uM-LcN" eventType="touchUpInside" id="z1p-Cp-rLW"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -4513,11 +4553,15 @@
                     <connections>
                         <outlet property="bgView" destination="DSy-2f-wzm" id="dJo-Gk-FvM"/>
                         <outlet property="bgView2" destination="zZW-zN-dXs" id="65x-7e-5In"/>
+                        <outlet property="pickView" destination="G34-uQ-nNq" id="vvw-8r-kO8"/>
+                        <outlet property="textField1" destination="e0f-za-0A7" id="oBQ-k9-QcW"/>
+                        <outlet property="textField2" destination="f3G-kh-w66" id="9sN-c0-7s9"/>
+                        <outlet property="textField3" destination="4k0-yU-FFB" id="76G-tb-qNO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVv-bm-Nda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1528" y="4047"/>
+            <point key="canvasLocation" x="-1528.125" y="4046.8309859154929"/>
         </scene>
         <!--SetSIM Parms Controller-->
         <scene sceneID="0u6-VW-1Qu">
@@ -4601,6 +4645,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="e9Q-Hk-DsA"/>
                                                 </constraints>
                                                 <state key="normal" image="ok"/>
+                                                <connections>
+                                                    <action selector="clickSetupBtnSender:" destination="anQ-Sj-nFn" eventType="touchUpInside" id="8V8-L9-THX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fc-cd-AkJ">
                                                 <rect key="frame" x="31" y="178" width="68" height="25"/>
@@ -4609,11 +4656,17 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="查询" backgroundImage="savebtn"/>
+                                                <connections>
+                                                    <action selector="clickChaBtnSender:" destination="anQ-Sj-nFn" eventType="touchUpInside" id="gmA-HY-Rss"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbr-Dv-OmB">
                                                 <rect key="frame" x="151" y="178" width="68" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="删除" backgroundImage="savebtn"/>
+                                                <connections>
+                                                    <action selector="clickDelBtnSender:" destination="anQ-Sj-nFn" eventType="touchUpInside" id="ghs-eC-FHa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4691,6 +4744,9 @@
                     <connections>
                         <outlet property="bgView" destination="FUV-Nb-Rdh" id="tx0-0l-9vg"/>
                         <outlet property="bgView2" destination="i9t-f1-0Ne" id="FbH-iA-svj"/>
+                        <outlet property="textField1" destination="7aQ-rb-HE6" id="4Gm-xi-rog"/>
+                        <outlet property="textField2" destination="N8t-IX-q3j" id="jfa-Dr-rsq"/>
+                        <outlet property="textField3" destination="9jL-op-aVh" id="IGy-Zo-jz2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGu-gd-nz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4758,6 +4814,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="YFI-qV-Qg2"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn1:" destination="FoV-Tu-THD" eventType="touchUpInside" id="20E-gf-Dhi"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三/单相电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZH-Sz-NNm">
                                                                 <rect key="frame" x="15" y="79" width="53.5" height="14.5"/>
@@ -4790,6 +4849,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn1:" destination="FoV-Tu-THD" eventType="touchUpInside" id="PaB-f4-R6C"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTB-u9-qlv">
                                                                 <rect key="frame" x="200" y="77" width="20" height="20"/>
@@ -4798,6 +4860,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="klK-K0-2cV"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn2:" destination="FoV-Tu-THD" eventType="touchUpInside" id="t9n-Pl-PeX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4875,6 +4940,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="psb-96-tfs"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn3:" destination="FoV-Tu-THD" eventType="touchUpInside" id="zUh-1M-4Ar"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三/单相电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVt-bv-ocu">
                                                                 <rect key="frame" x="15" y="79" width="53.5" height="14.5"/>
@@ -4907,6 +4975,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn2:" destination="FoV-Tu-THD" eventType="touchUpInside" id="fjM-sk-k63"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9G-dp-Kfy">
                                                                 <rect key="frame" x="200" y="77" width="20" height="20"/>
@@ -4915,6 +4986,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="xNH-Hh-Ypa"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn4:" destination="FoV-Tu-THD" eventType="touchUpInside" id="jDJ-iD-dVo"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4971,6 +5045,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="YaI-2y-1JU"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn5:" destination="FoV-Tu-THD" eventType="touchUpInside" id="SJw-bb-GgU"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三/单相电" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oaw-ro-5qv">
                                                                 <rect key="frame" x="15" y="79" width="53.5" height="14.5"/>
@@ -5003,6 +5080,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn3:" destination="FoV-Tu-THD" eventType="touchUpInside" id="CeT-RU-yf8"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfH-WE-HiP">
                                                                 <rect key="frame" x="200" y="77" width="20" height="20"/>
@@ -5011,6 +5091,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="lpb-Fc-9mO"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn6:" destination="FoV-Tu-THD" eventType="touchUpInside" id="XQ8-5j-PpE"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5067,6 +5150,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="8qn-hp-2dS"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn7:" destination="FoV-Tu-THD" eventType="touchUpInside" id="cYY-a0-eR0"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aQ-NU-Yex">
                                                                 <rect key="frame" x="184.5" y="14" width="50" height="20"/>
@@ -5084,6 +5170,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn4:" destination="FoV-Tu-THD" eventType="touchUpInside" id="Bdb-MO-6rR"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5185,6 +5274,13 @@
                     <connections>
                         <outlet property="bgView" destination="yO5-FG-irM" id="PPd-M2-boa"/>
                         <outlet property="bgView2" destination="fSk-Ab-ZGd" id="R4W-V7-8oQ"/>
+                        <outlet property="textField1" destination="mWN-Ff-6pX" id="Z7o-Uc-D0c"/>
+                        <outlet property="textField2" destination="7ke-eg-dN9" id="Rht-E5-K8n"/>
+                        <outlet property="textField3" destination="tSV-rS-tqQ" id="KFF-tT-l7f"/>
+                        <outlet property="textField4" destination="NRc-zH-NgL" id="pXw-nY-DDg"/>
+                        <outlet property="textField5" destination="gkE-e0-vyn" id="uJE-9X-Mwz"/>
+                        <outlet property="textField6" destination="uEQ-c3-eGV" id="Ysa-QU-J3o"/>
+                        <outlet property="textField7" destination="4Pq-7u-grQ" id="Zq6-FQ-2rj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wkj-jJ-M7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5252,6 +5348,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="ddi-PT-ESm"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn1:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="41p-OG-AjI"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtG-ZJ-oGf">
                                                                 <rect key="frame" x="184.5" y="14" width="50" height="20"/>
@@ -5269,6 +5368,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn1:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="sq9-Wv-heX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5339,6 +5441,9 @@
                                                                     <constraint firstAttribute="width" constant="20" id="PtX-zy-yx3"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn2:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="c40-M6-Rhy"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obJ-GG-Am0">
                                                                 <rect key="frame" x="184.5" y="14" width="50" height="20"/>
@@ -5356,6 +5461,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn2:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="BhW-lp-oeu"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5405,6 +5513,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="n0M-Gq-TBY"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn3:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="n1U-3S-WB1"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rI7-hP-k5R">
                                                                 <rect key="frame" x="184.5" y="14" width="50" height="20"/>
@@ -5422,6 +5533,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn3:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="WkO-G9-bqd"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5471,6 +5585,9 @@
                                                                     <constraint firstAttribute="height" constant="20" id="wbA-R9-Iza"/>
                                                                 </constraints>
                                                                 <state key="normal" image="ok"/>
+                                                                <connections>
+                                                                    <action selector="clickSetupBtn4:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="FRu-TY-uvk"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-ac-RA9">
                                                                 <rect key="frame" x="184.5" y="14" width="50" height="20"/>
@@ -5488,6 +5605,9 @@
                                                                         <integer key="value" value="6"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickChaBtn4:" destination="5Pf-0M-6A8" eventType="touchUpInside" id="Vdm-1g-6kt"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5589,6 +5709,10 @@
                     <connections>
                         <outlet property="bgView" destination="5yG-y1-aV3" id="mil-fg-GIg"/>
                         <outlet property="bgView2" destination="eK3-Dg-zuq" id="6QV-Kq-rZz"/>
+                        <outlet property="textField1" destination="U8n-dl-4T5" id="nQt-t6-mui"/>
+                        <outlet property="textField2" destination="eCO-zP-nM3" id="JdA-59-rTH"/>
+                        <outlet property="textField3" destination="h26-Jh-VWz" id="0aY-Yw-apo"/>
+                        <outlet property="textField4" destination="bcZ-6W-d5i" id="gcc-VB-h0f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j5-De-KUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5644,6 +5768,9 @@
                                                     <constraint firstAttribute="width" constant="20" id="MwB-sH-OA7"/>
                                                 </constraints>
                                                 <state key="normal" image="ok"/>
+                                                <connections>
+                                                    <action selector="clickSetupBtnSender:" destination="xYz-ft-WGX" eventType="touchUpInside" id="3UU-66-PNk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ju-97-hfl">
                                                 <rect key="frame" x="91" y="79" width="68" height="25"/>
@@ -5652,6 +5779,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="查询" backgroundImage="savebtn"/>
+                                                <connections>
+                                                    <action selector="clickChaBtnSender:" destination="xYz-ft-WGX" eventType="touchUpInside" id="1Rr-FN-fJU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5698,6 +5828,7 @@
                     <connections>
                         <outlet property="bgView" destination="Kye-EG-vRC" id="8t4-WG-u0U"/>
                         <outlet property="bgView2" destination="Saj-6Y-SFq" id="8Vf-Vz-soo"/>
+                        <outlet property="textField" destination="0eq-Ct-Uzd" id="0yB-xE-O4Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8D-uE-sQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -6189,9 +6320,9 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0-65566" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-6T-tzQ">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0-65566秒" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-6T-tzQ">
                                                 <rect key="frame" x="98" y="32" width="85" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-42-qnW">
@@ -6201,6 +6332,9 @@
                                                     <constraint firstAttribute="height" constant="22" id="BsH-sS-vLX"/>
                                                 </constraints>
                                                 <state key="normal" image="ok"/>
+                                                <connections>
+                                                    <action selector="clickOkButtonSender:" destination="5RM-ym-tz7" eventType="touchUpInside" id="qOV-0J-KgZ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AO输出状态" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHQ-ZS-tKQ">
                                                 <rect key="frame" x="8" y="162" width="80" height="21"/>
@@ -6228,6 +6362,9 @@
                                                         <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickinquirTimeBtn:" destination="5RM-ym-tz7" eventType="touchUpInside" id="inl-KE-wp6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crh-6V-fwb">
                                                 <rect key="frame" x="89.5" y="198" width="60" height="30"/>
@@ -6245,6 +6382,9 @@
                                                         <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickOffStateBtn:" destination="5RM-ym-tz7" eventType="touchUpInside" id="buY-gx-W3c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5Z-TK-b1f">
                                                 <rect key="frame" x="165" y="198" width="60" height="30"/>
@@ -6262,6 +6402,9 @@
                                                         <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickInquirStateBtn:" destination="5RM-ym-tz7" eventType="touchUpInside" id="knd-dc-YjR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcB-83-Sr9">
                                                 <rect key="frame" x="15" y="198" width="60" height="30"/>
@@ -6279,6 +6422,9 @@
                                                         <integer key="value" value="6"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickOpenStateBtn:" destination="5RM-ym-tz7" eventType="touchUpInside" id="Qbt-Cc-h1y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6346,6 +6492,7 @@
                     <connections>
                         <outlet property="bgView" destination="psR-Rd-N6Q" id="YDq-O1-6zA"/>
                         <outlet property="bgView2" destination="mwu-4J-Z7h" id="dBn-ln-3H0"/>
+                        <outlet property="textField" destination="Fsc-6T-tzQ" id="SPQ-a9-AEi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h38-Vt-ewN" userLabel="First Responder" sceneMemberID="firstResponder"/>

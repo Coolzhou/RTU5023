@@ -31,6 +31,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickSetupBtnSender:(UIButton *)sender {
+    
+    NSString *mg = [NSString stringWithFormat:@"%@AP%@#%@#%@", THEAPPDELEGATE.sel_host_pwd,self.textField1.text,self.textField2.text,self.textField3.text];
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+- (IBAction)clickChaBtnSender:(UIButton *)sender {
+    NSString *mg = [NSString stringWithFormat:@"%@AP", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickDelBtnSender:(UIButton *)sender {
+    NSString *mg = [NSString stringWithFormat:@"%@APDEL", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+
+
 /*
 #pragma mark - Navigation
 

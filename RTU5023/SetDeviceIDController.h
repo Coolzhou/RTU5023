@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SetDeviceIDController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end

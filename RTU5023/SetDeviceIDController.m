@@ -26,6 +26,18 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
 }
 
+- (IBAction)clickSetupBtnSender:(id)sender {
+    
+    NSString *mg = [NSString stringWithFormat:@"%@ID%@", THEAPPDELEGATE.sel_host_pwd,self.textField.text];
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+
+}
+
+- (IBAction)clickChaBtnSender:(id)sender {
+    NSString *mg = [NSString stringWithFormat:@"%@IDE", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

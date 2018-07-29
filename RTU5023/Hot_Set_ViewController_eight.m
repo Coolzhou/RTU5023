@@ -27,6 +27,37 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
 }
 
+- (IBAction)clickOkButtonSender:(UIButton *)sender {
+    
+    if ([self.textField.text integerValue] > 65535 || [self.textField.text integerValue] < 0 ) {
+        NSLog(@"ssssssss");
+        return;
+    }
+    NSString *msg = [NSString stringWithFormat:@"%@AOT%@", THEAPPDELEGATE.sel_host_pwd,self.textField.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickinquirTimeBtn:(UIButton *)sender {
+    
+    NSString *msg = [NSString stringWithFormat:@"%@AOT", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+
+- (IBAction)clickOpenStateBtn:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AON", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickOffStateBtn:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AOF", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+- (IBAction)clickInquirStateBtn:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AOE", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

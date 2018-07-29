@@ -33,6 +33,44 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
 }
 
+- (IBAction)clickChaBtn1:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINQ", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+- (IBAction)clickSetupBtn1:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINQ%@", THEAPPDELEGATE.sel_host_pwd,self.textField1.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickChaBtn2:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINA", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+- (IBAction)clickSetupBtn2:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINA%@", THEAPPDELEGATE.sel_host_pwd,self.textField2.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickChaBtn3:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINN", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+- (IBAction)clickSetupBtn3:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@AINN%@", THEAPPDELEGATE.sel_host_pwd,self.textField3.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+- (IBAction)clickChaBtn4:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@DN", THEAPPDELEGATE.sel_host_pwd];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+- (IBAction)clickSetupBtn4:(id)sender {
+    NSString *msg = [NSString stringWithFormat:@"%@DN%@", THEAPPDELEGATE.sel_host_pwd,self.textField4.text];
+    [THEAPPDELEGATE.mainV sendMsg:msg phNum:THEAPPDELEGATE.sel_host_phNum];
+}
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -48,4 +86,6 @@
 }
 */
 
+- (IBAction)textField:(id)sender {
+}
 @end

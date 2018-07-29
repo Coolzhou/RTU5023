@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface SetAlarmViewController_nine : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textField1;
+@property (weak, nonatomic) IBOutlet UITextField *textField2;
 
+@property (weak, nonatomic) IBOutlet UITextField *textField3;
+@property (weak, nonatomic) IBOutlet UITextField *textField4;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField5;
+@property (weak, nonatomic) IBOutlet UITextField *textField6;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField7;
 @end

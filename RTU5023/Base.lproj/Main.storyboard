@@ -3997,7 +3997,7 @@
                                         <rect key="frame" x="20" y="45" width="240" height="463"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0J-73-e5B">
-                                                <rect key="frame" x="0.0" y="1" width="240" height="462"/>
+                                                <rect key="frame" x="0.0" y="1" width="240" height="510"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XxJ-TZ-TyT">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -4178,6 +4178,10 @@
                                                             </button>
                                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G34-uQ-nNq">
                                                                 <rect key="frame" x="92" y="20" width="83" height="66"/>
+                                                                <connections>
+                                                                    <outlet property="dataSource" destination="cVc-uM-LcN" id="eWu-9t-BYs"/>
+                                                                    <outlet property="delegate" destination="cVc-uM-LcN" id="PRE-ap-lXj"/>
+                                                                </connections>
                                                             </pickerView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4494,7 +4498,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="LBb-xx-dwz" secondAttribute="trailing" id="uw3-v1-CL2"/>
                                                     <constraint firstItem="Vhd-0T-fIz" firstAttribute="top" secondItem="4Fg-Jn-6PM" secondAttribute="bottom" id="yFI-h4-zj5"/>
                                                     <constraint firstItem="4Fg-Jn-6PM" firstAttribute="centerX" secondItem="E0J-73-e5B" secondAttribute="centerX" id="z5O-JD-yYn"/>
-                                                    <constraint firstAttribute="height" constant="462" id="zk4-d0-eWd"/>
+                                                    <constraint firstAttribute="height" constant="510" id="zk4-d0-eWd"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

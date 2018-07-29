@@ -11,6 +11,7 @@
 
 #import "AppDelegate.h"
 #import "Common.h"
+#import "IQKeyboardManager.h"
 
 
 #endif /* PrefixHeader_pch */

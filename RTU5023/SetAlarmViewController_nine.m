@@ -15,7 +15,8 @@
     NSArray *ls;
 }
 @property (weak, nonatomic) IBOutlet UIView *bgView;
-
+    @property (weak, nonatomic) IBOutlet UILabel *titleLable;
+    
 @property (weak, nonatomic) IBOutlet UIScrollView *bgView2;
 @end
 
@@ -30,6 +31,8 @@
     
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
+    
+    self.titleLable.text = NSLocalizedString(@"ao_5029_title", nil);
 }
 
 //时间

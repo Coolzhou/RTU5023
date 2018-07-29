@@ -12,7 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIView *bgView2;
-
+    @property (weak, nonatomic) IBOutlet UILabel *titleLable;
+    
 @end
 
 @implementation Hot_Set_ViewController_eight
@@ -25,6 +26,8 @@
     
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
+    
+    self.titleLable.text = NSLocalizedString(@"ao_5028_title", nil);
 }
 
 - (IBAction)clickOkButtonSender:(UIButton *)sender {

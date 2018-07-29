@@ -97,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB021D16210DC20100C57F6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CB6E3D14210D733A0065F2ED /* SetAlarmViewController_six.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_six.h; sourceTree = "<group>"; };
 		CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
 		CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_seven.m; sourceTree = "<group>"; };
@@ -880,6 +881,7 @@
 			children = (
 				DAAFF5891CB25EC6000485B5 /* Base */,
 				DACDB34E1DE7276F00449F17 /* zh-Hans */,
+				CB021D16210DC20100C57F6B /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

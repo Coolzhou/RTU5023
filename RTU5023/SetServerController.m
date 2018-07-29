@@ -11,7 +11,8 @@
 @interface SetServerController ()
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (weak, nonatomic) IBOutlet UIScrollView *bgView2;
-
+    @property (weak, nonatomic) IBOutlet UILabel *titleLable;
+    
 @property (nonatomic, strong) NSArray *dataArr;
 
 @end
@@ -21,13 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.titleLable.text = NSLocalizedString(@"connect_parameter", nil);
+    
     
     self.view.backgroundColor = THEAPPDELEGATE.bgColor;
     
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
-    self.dataArr = [NSArray arrayWithObjects:@"1、Modbus RTU协议",@"2、Modbus TCP协议",@"3、自定义协议", nil];
+    NSString *protocol1 = NSLocalizedString(@"protocol_1", nil);
+    NSString *protocol2 = NSLocalizedString(@"protocol_2", nil);
+    NSString *protocol3 = NSLocalizedString(@"protocol_3", nil);
+    
+    self.dataArr = [NSArray arrayWithObjects:protocol1,protocol2,protocol3, nil];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {

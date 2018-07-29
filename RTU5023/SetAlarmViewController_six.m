@@ -48,6 +48,8 @@
         _set_alarm_t1.text = THEAPPDELEGATE.sel_host_T;
         _set_alarm_t2.text = THEAPPDELEGATE.sel_host_V;
     }
+    
+    NSLog(@"222sel_host_T = %@ - sel_host_H = %@ sel_host_V = %@ sel_host_AIN = %@",THEAPPDELEGATE.sel_host_T,THEAPPDELEGATE.sel_host_H,THEAPPDELEGATE.sel_host_V,THEAPPDELEGATE.sel_host_AIN);
 
 
     ls = @[_set_alarm_h1, _set_alarm_l1, _set_alarm_h2, _set_alarm_l2 ];

@@ -25,6 +25,21 @@
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
+    if (THEAPPDELEGATE.langId == 0) {
+        self.host_set_t1.text = THEAPPDELEGATE.sel_host_T;
+        if ([THEAPPDELEGATE.sel_host_T isEqualToString:@"Temperature"]) {
+            self.host_set_t1.text = @"温度";
+        }
+
+        self.host_set_t2.text = THEAPPDELEGATE.sel_host_V;
+        if ([THEAPPDELEGATE.sel_host_V isEqualToString:@"Voltage"]) {
+            self.host_set_t2.text = @"电压";
+        }
+    }else{
+        _host_set_t1.text = THEAPPDELEGATE.sel_host_T;
+        _host_set_t2.text = THEAPPDELEGATE.sel_host_V;
+    }
+    
 
 }
 

@@ -17,7 +17,8 @@
 @interface HostViewController (){
     
 }
-
+    @property (weak, nonatomic) IBOutlet UILabel *twoLable;
+    
 @end
 
 @implementation HostViewController
@@ -57,6 +58,12 @@ AppDelegate *hostV_app;
     [[_host_cycleV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
     [[_host_keyV layer] setBorderWidth:1.0];//画线的宽度
     [[_host_keyV layer] setBorderColor: hostV_app.borderColor.CGColor];//颜色
+    
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5028"]||[THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5029"]){
+        self.twoLable.text = NSLocalizedString(@"ao_5028_title", nil);
+    }else{
+        self.twoLable.text = NSLocalizedString(@"inquery_device_state_parms", nil);
+    }
 }
 
 - (void)didReceiveMemoryWarning {

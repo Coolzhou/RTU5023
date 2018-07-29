@@ -55,6 +55,11 @@ pwdTip="The old password is not in line with the current password. Please re-ent
 pwdTip2="The new password must be a bit number, and the length must be 4!";//新密码必须位数字，且长度必须为4！
 pwdTip3="Old passwords can not be consistent with the new password!";//旧密码不能与新密码一致！
 
+inquery_device_state_parms="Inquiry Settings";
+set_alarm_Parameters="Setting Alarm Parameters";
+set_alarm_Parameters2="Setting Alarm Parameters";
+set_alarm_Parameters3="Setting Alarm Parameters";
+
 
 ain_query="Inquiry AIN Measurement Range";
 ain_setting="Set AIN Measurement Range";
@@ -97,3 +102,5 @@ heartbeat="Heartbeat Content";
 heartbeat_cycle="Heartbeat Cycle";
 off_reconnect="Reconnect Time";
 reconnect="Reconnect Online";
+
+

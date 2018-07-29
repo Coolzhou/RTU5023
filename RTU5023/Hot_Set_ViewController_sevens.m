@@ -28,11 +28,11 @@
             _host_set_t1.text = @"AIN";
         }
         _host_set_t2.text = THEAPPDELEGATE.sel_host_V;
-        if ([THEAPPDELEGATE.sel_host_H isEqualToString:@"Voltage"]) {
+        if ([THEAPPDELEGATE.sel_host_V isEqualToString:@"Voltage"]) {
             _host_set_t2.text = @"电压";
         }
     }else{
-        _host_set_t1.text = THEAPPDELEGATE.sel_host_T;
+        _host_set_t1.text = THEAPPDELEGATE.sel_host_AIN;
         _host_set_t2.text = THEAPPDELEGATE.sel_host_V;
     }
 }

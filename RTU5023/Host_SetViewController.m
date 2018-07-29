@@ -45,6 +45,8 @@ AppDelegate *host_set_app;
         _host_set_t3.text = host_set_app.sel_host_V;
     }
     
+    NSLog(@"111sel_host_T = %@ - sel_host_H = %@ sel_host_V = %@ sel_host_AIN = %@",host_set_app.sel_host_T,host_set_app.sel_host_H,host_set_app.sel_host_V,host_set_app.sel_host_AIN);
+    
 }
 
 - (void)didReceiveMemoryWarning {

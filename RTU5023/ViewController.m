@@ -151,6 +151,8 @@ AppDelegate *app;
     app.sel_host_H = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_h"];
     app.sel_host_V = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_v"];
     app.sel_host_AIN = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_AIN"];
+    
+    NSLog(@"sel_host_T = %@ - sel_host_H = %@ sel_host_V = %@ sel_host_AIN = %@",app.sel_host_T,app.sel_host_H,app.sel_host_V,app.sel_host_AIN);
 
     
     if (!app.isAddHost) {//是编辑模式下

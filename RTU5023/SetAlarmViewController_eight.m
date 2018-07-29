@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIView *bgView;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *bgView2;
-
+    @property (weak, nonatomic) IBOutlet UILabel *titleLable;
+    
 @end
 
 @implementation SetAlarmViewController_eight
@@ -31,6 +32,8 @@
     
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
+    
+    self.titleLable.text = NSLocalizedString(@"ao_5029_title", nil);
 }
 
 - (IBAction)clickChaBtn1:(id)sender {

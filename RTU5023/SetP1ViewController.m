@@ -18,6 +18,12 @@
 #import "CycleNAVController.h"
 #import "SetAlarmViewController_six.h"
 #import "SetAlarmViewController_seven.h"
+#import "SetAlarmViewController_eight.h"
+#import "SetAlarmViewController_nine.h"
+
+#import "SetDeviceIDController.h"
+#import "SetSIMParmsController.h"
+#import "SetServerController.h"
 
 @interface SetP1ViewController ()
 
@@ -60,6 +66,13 @@ AppDelegate *setP1_app;
     [[_setP1_L9 layer] setBorderWidth:1.5];//画线的宽度
     [[_setP1_L9 layer] setBorderColor: c.CGColor];//颜色
     
+    [[_setP1_L10 layer] setBorderWidth:1.5];//画线的宽度
+    [[_setP1_L10 layer] setBorderColor: c.CGColor];//颜色
+    [[_setP1_L11 layer] setBorderWidth:1.5];//画线的宽度
+    [[_setP1_L11 layer] setBorderColor: c.CGColor];//颜色
+    [[_setP1_L12 layer] setBorderWidth:1.5];//画线的宽度
+    [[_setP1_L12 layer] setBorderColor: c.CGColor];//颜色
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,7 +104,12 @@ AppDelegate *setP1_app;
     }else if ([setP1_app.sel_host_type isEqualToString:@"RTU5027"]){
         SetAlarmViewController_seven *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetAlarmViewController_seven"];
         [self.navigationController pushViewController:hnc animated:YES];
+    }else if ([setP1_app.sel_host_type isEqualToString:@"RTU5028"]){
+        SetAlarmViewController_eight *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetAlarmViewController_eight"];
+        [self.navigationController pushViewController:hnc animated:YES];
     }else{
+        SetAlarmViewController_nine *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetAlarmViewController_nine"];
+        [self.navigationController pushViewController:hnc animated:YES];
     }
     
     
@@ -128,6 +146,20 @@ AppDelegate *setP1_app;
     [setP1_app.mainV sendMsg:msg phNum:setP1_app.sel_host_phNum];
 }
 
+
+- (IBAction)clickDeviceIDSender:(UITapGestureRecognizer *)sender {
+    SetDeviceIDController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetDeviceIDController"];
+    [self.navigationController pushViewController:hnc animated:YES];
+}
+
+- (IBAction)clickSIMCartSender:(UITapGestureRecognizer *)sender {
+    SetSIMParmsController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetSIMParmsController"];
+    [self.navigationController pushViewController:hnc animated:YES];
+}
+- (IBAction)clickServceSender:(UITapGestureRecognizer *)sender {
+    SetServerController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetServerController"];
+    [self.navigationController pushViewController:hnc animated:YES];
+}
 
 
 @end

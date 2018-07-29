@@ -10,7 +10,9 @@
 
 @interface SetP1ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *setP1_bgV;
-@property (weak, nonatomic) IBOutlet UIView *setP1_bg2V;
+@property (weak, nonatomic) IBOutlet UIScrollView *setP1_bg2V;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L1;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L2;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L3;
@@ -20,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L7;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L8;
 @property (weak, nonatomic) IBOutlet UILabel *setP1_L9;
+
+@property (weak, nonatomic) IBOutlet UILabel *setP1_L10;
+@property (weak, nonatomic) IBOutlet UILabel *setP1_L11;
+@property (weak, nonatomic) IBOutlet UILabel *setP1_L12;
 
 - (IBAction)setP1_SyncTimeClick:(id)sender;
 - (IBAction)setP1_numClick:(id)sender;

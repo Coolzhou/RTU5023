@@ -12,6 +12,7 @@
 #import "Host_RECO_NAVController.h"
 #import "Hot_Set_ViewController_sixs.h"
 #import "Hot_Set_ViewController_sevens.h"
+#import "Hot_Set_ViewController_eight.h"
 
 @interface HostViewController (){
     
@@ -84,6 +85,8 @@ AppDelegate *hostV_app;
         Hot_Set_ViewController_sevens *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"Hot_Set_ViewController_seven"];
         [self.navigationController pushViewController:hnc animated:YES];
     }else{
+        Hot_Set_ViewController_eight *eight = [self.storyboard instantiateViewControllerWithIdentifier:@"Hot_Set_ViewController_eight"];
+        [self.navigationController pushViewController:eight animated:YES];
     }
 }
 

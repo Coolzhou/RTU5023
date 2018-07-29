@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB6E3D16210D733B0065F2ED /* SetAlarmViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */; };
 		CB6E3D19210D734C0065F2ED /* SetAlarmViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */; };
+		CB6E3D1C210D7D170065F2ED /* Hot_Set_ViewController_eight.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D1B210D7D170065F2ED /* Hot_Set_ViewController_eight.m */; };
+		CB6E3D21210D850D0065F2ED /* SetAlarmViewController_eight.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D20210D850D0065F2ED /* SetAlarmViewController_eight.m */; };
+		CB6E3D24210D85250065F2ED /* SetAlarmViewController_nine.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D23210D85250065F2ED /* SetAlarmViewController_nine.m */; };
+		CB6E3D28210D91460065F2ED /* SetDeviceIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D27210D91460065F2ED /* SetDeviceIDController.m */; };
+		CB6E3D2B210D916A0065F2ED /* SetSIMParmsController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D2A210D916A0065F2ED /* SetSIMParmsController.m */; };
+		CB6E3D2E210D918A0065F2ED /* SetServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D2D210D918A0065F2ED /* SetServerController.m */; };
 		CBE3A4BF210698640060BF8C /* Hot_Set_ViewController_sixs.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */; };
 		CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_sevens.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */; };
 		DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9035481CB3A7F600FD63A1 /* Localizable.strings */; };
@@ -81,6 +87,18 @@
 		CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
 		CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_seven.m; sourceTree = "<group>"; };
 		CB6E3D18210D734C0065F2ED /* SetAlarmViewController_seven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_seven.h; sourceTree = "<group>"; };
+		CB6E3D1A210D7D170065F2ED /* Hot_Set_ViewController_eight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_eight.h; sourceTree = "<group>"; };
+		CB6E3D1B210D7D170065F2ED /* Hot_Set_ViewController_eight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_eight.m; sourceTree = "<group>"; };
+		CB6E3D1F210D850D0065F2ED /* SetAlarmViewController_eight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_eight.h; sourceTree = "<group>"; };
+		CB6E3D20210D850D0065F2ED /* SetAlarmViewController_eight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_eight.m; sourceTree = "<group>"; };
+		CB6E3D22210D85250065F2ED /* SetAlarmViewController_nine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_nine.h; sourceTree = "<group>"; };
+		CB6E3D23210D85250065F2ED /* SetAlarmViewController_nine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_nine.m; sourceTree = "<group>"; };
+		CB6E3D26210D91460065F2ED /* SetDeviceIDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetDeviceIDController.h; sourceTree = "<group>"; };
+		CB6E3D27210D91460065F2ED /* SetDeviceIDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetDeviceIDController.m; sourceTree = "<group>"; };
+		CB6E3D29210D916A0065F2ED /* SetSIMParmsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetSIMParmsController.h; sourceTree = "<group>"; };
+		CB6E3D2A210D916A0065F2ED /* SetSIMParmsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetSIMParmsController.m; sourceTree = "<group>"; };
+		CB6E3D2C210D918A0065F2ED /* SetServerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetServerController.h; sourceTree = "<group>"; };
+		CB6E3D2D210D918A0065F2ED /* SetServerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetServerController.m; sourceTree = "<group>"; };
 		CBE3A4BD210698640060BF8C /* Hot_Set_ViewController_sixs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_sixs.h; sourceTree = "<group>"; };
 		CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_sixs.m; sourceTree = "<group>"; };
 		CBE3A4C021069ADE0060BF8C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -208,6 +226,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB6E3D1D210D84EF0065F2ED /* 5028 */ = {
+			isa = PBXGroup;
+			children = (
+				CB6E3D1F210D850D0065F2ED /* SetAlarmViewController_eight.h */,
+				CB6E3D20210D850D0065F2ED /* SetAlarmViewController_eight.m */,
+			);
+			name = 5028;
+			sourceTree = "<group>";
+		};
+		CB6E3D1E210D84F60065F2ED /* 5029 */ = {
+			isa = PBXGroup;
+			children = (
+				CB6E3D22210D85250065F2ED /* SetAlarmViewController_nine.h */,
+				CB6E3D23210D85250065F2ED /* SetAlarmViewController_nine.m */,
+			);
+			name = 5029;
+			sourceTree = "<group>";
+		};
+		CB6E3D25210D91090065F2ED /* all */ = {
+			isa = PBXGroup;
+			children = (
+				CB6E3D26210D91460065F2ED /* SetDeviceIDController.h */,
+				CB6E3D27210D91460065F2ED /* SetDeviceIDController.m */,
+				CB6E3D29210D916A0065F2ED /* SetSIMParmsController.h */,
+				CB6E3D2A210D916A0065F2ED /* SetSIMParmsController.m */,
+				CB6E3D2C210D918A0065F2ED /* SetServerController.h */,
+				CB6E3D2D210D918A0065F2ED /* SetServerController.m */,
+			);
+			name = all;
+			sourceTree = "<group>";
+		};
 		CBE3A4C221069F190060BF8C /* 5026 */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +296,8 @@
 		CBEE5F5C2104EDE300D046CA /* 5028 */ = {
 			isa = PBXGroup;
 			children = (
+				CB6E3D1A210D7D170065F2ED /* Hot_Set_ViewController_eight.h */,
+				CB6E3D1B210D7D170065F2ED /* Hot_Set_ViewController_eight.m */,
 			);
 			name = 5028;
 			sourceTree = "<group>";
@@ -367,6 +418,7 @@
 		DAAFF62E1CB2628C000485B5 /* host */ = {
 			isa = PBXGroup;
 			children = (
+				CB6E3D25210D91090065F2ED /* all */,
 				CBEE5F5C2104EDE300D046CA /* 5028 */,
 				CBEE5F5B2104EDD300D046CA /* 5027 */,
 				CBEE5F5A2104EDC600D046CA /* 5026 */,
@@ -393,6 +445,8 @@
 		DAAFF64F1CB29684000485B5 /* set */ = {
 			isa = PBXGroup;
 			children = (
+				CB6E3D1E210D84F60065F2ED /* 5029 */,
+				CB6E3D1D210D84EF0065F2ED /* 5028 */,
 				CBE3A4C321069F210060BF8C /* 5027 */,
 				CBE3A4C221069F190060BF8C /* 5026 */,
 				DAAFF6501CB29734000485B5 /* RTUNavigationController.h */,
@@ -591,6 +645,7 @@
 				DAAFF60D1CB2613A000485B5 /* AppDelegate.m in Sources */,
 				CBE3A4BF210698640060BF8C /* Hot_Set_ViewController_sixs.m in Sources */,
 				DAAFF6451CB26E00000485B5 /* Host_SetNavigationController.m in Sources */,
+				CB6E3D28210D91460065F2ED /* SetDeviceIDController.m in Sources */,
 				DAAFF6681CB2AE2F000485B5 /* SetTHNAVController.m in Sources */,
 				DAAFF67F1CB2C511000485B5 /* PWDNavigationController.m in Sources */,
 				DAAFF62A1CB26275000485B5 /* AppPWDNavigationController.m in Sources */,
@@ -598,6 +653,8 @@
 				DAAFF6331CB2629C000485B5 /* HostNavigationController.m in Sources */,
 				DAAFF64B1CB276F4000485B5 /* Host_RECOViewController.m in Sources */,
 				DAAFF61F1CB26258000485B5 /* TypeNavigationController.m in Sources */,
+				CB6E3D2E210D918A0065F2ED /* SetServerController.m in Sources */,
+				CB6E3D24210D85250065F2ED /* SetAlarmViewController_nine.m in Sources */,
 				DAAFF6771CB2BDC6000485B5 /* LanguageViewController.m in Sources */,
 				DAAFF6651CB2AE05000485B5 /* SetTHViewController.m in Sources */,
 				DACDB3491DE71F4100449F17 /* CycleNAVController.m in Sources */,
@@ -605,11 +662,14 @@
 				DAAFF6711CB2B94B000485B5 /* AutoNAVController.m in Sources */,
 				DAAFF6801CB2C511000485B5 /* PWDViewController.m in Sources */,
 				DAAFF61E1CB26258000485B5 /* AddViewController.m in Sources */,
+				CB6E3D2B210D916A0065F2ED /* SetSIMParmsController.m in Sources */,
+				CB6E3D21210D850D0065F2ED /* SetAlarmViewController_eight.m in Sources */,
 				DAAFF64E1CB2770D000485B5 /* Host_RECO_NAVController.m in Sources */,
 				DAAFF6481CB26E16000485B5 /* Host_SetViewController.m in Sources */,
 				DAAFF65E1CB2A460000485B5 /* SetAlarmNAVController.m in Sources */,
 				DAAFF60F1CB2613A000485B5 /* ViewController.m in Sources */,
 				DAAFF6541CB29734000485B5 /* RTUNavigationController.m in Sources */,
+				CB6E3D1C210D7D170065F2ED /* Hot_Set_ViewController_eight.m in Sources */,
 				DAAFF65B1CB29AA1000485B5 /* UserViewController.m in Sources */,
 				DAAFF65A1CB29AA1000485B5 /* UserNavigationController.m in Sources */,
 				DAAFF6741CB2B960000485B5 /* AutoViewController.m in Sources */,

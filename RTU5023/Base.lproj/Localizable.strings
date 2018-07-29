@@ -54,3 +54,46 @@ setTHTip1="High cannot be empty, and can only enter the number, length of 3";//�
 pwdTip="The old password is not in line with the current password. Please re-enter the password!";//旧密码与当前密码不一致，请重新输入！
 pwdTip2="The new password must be a bit number, and the length must be 4!";//新密码必须位数字，且长度必须为4！
 pwdTip3="Old passwords can not be consistent with the new password!";//旧密码不能与新密码一致！
+
+
+ain_query="Inquiry AIN Measurement Range";
+ain_setting="Set AIN Measurement Range";
+ain_setting_title="Set Alarm Parameters";
+ain_max="Max";
+ain_min="Min";
+
+
+ao_5028_title="Set AO Output(Siren)";
+
+
+ao_5029_title="Set Alarm Parameters";
+ao_output_time="AO Output Time";
+ao_output_status="AO Output Status";
+
+power="External Power";
+power_="3/Single Phase Electric";
+
+
+commit_time="Alarm Verify Time";
+commit_content="Alarm SMS Content";
+recovery_content="Recover SMS Content";
+
+
+set_device_id="Set Device ID";
+sim_title="Set SIM Card";
+sim_tip="Network Parameters";
+connect_parameter="Set Server Connection";
+service_parameter="Server Parameters";
+ip="IP/Domain";
+port="Port";
+protocol="Communication Protocol";
+protocol_1="1.Modbus RTU Protocol";
+protocol_2="2.Modbus TCP Protocol";
+protocol_3="3.Definition Protocol";
+
+
+reg_content="Login Message";
+heartbeat="Heartbeat Content";
+heartbeat_cycle="Heartbeat Cycle";
+off_reconnect="Reconnect Time";
+reconnect="Reconnect Online";

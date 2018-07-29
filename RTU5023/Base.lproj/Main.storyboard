@@ -1465,7 +1465,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="Kld-wn-lR6" appends="YES" id="vaX-sk-rc8"/>
                                                         </connections>
                                                     </label>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置设备ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-Ux-IIs">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Device ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-Ux-IIs">
                                                         <rect key="frame" x="13" y="303.5" width="223" height="39.5"/>
                                                         <color key="backgroundColor" red="0.43921568630000002" green="0.78823529410000004" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <gestureRecognizers/>
@@ -1476,7 +1476,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="8qQ-hU-zFU" appends="YES" id="wzP-ev-JEB"/>
                                                         </connections>
                                                     </label>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置SIM卡上网参数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM0-9D-bBq">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set SIM Card" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YM0-9D-bBq">
                                                         <rect key="frame" x="13" y="351" width="223" height="39"/>
                                                         <color key="backgroundColor" red="0.43921568630000002" green="0.78823529410000004" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <gestureRecognizers/>
@@ -1487,7 +1487,7 @@
                                                             <outletCollection property="gestureRecognizers" destination="4y9-jv-7yR" appends="YES" id="Ezf-EB-sGd"/>
                                                         </connections>
                                                     </label>
-                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置服务器连接参数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-bM-QNf">
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Server Connection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-bM-QNf">
                                                         <rect key="frame" x="13" y="398" width="223" height="40"/>
                                                         <color key="backgroundColor" red="0.43921568630000002" green="0.78823529410000004" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <gestureRecognizers/>
@@ -1660,7 +1660,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-200.625" y="1094.3661971830986"/>
+            <point key="canvasLocation" x="109" y="1101"/>
         </scene>
         <!--Host Set Navigation Controller-->
         <scene sceneID="PIj-Eu-6h5">

@@ -22,7 +22,19 @@
     self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
-    
+    if (THEAPPDELEGATE.langId == 0) {
+        _host_set_t1.text = THEAPPDELEGATE.sel_host_AIN;
+        if ([THEAPPDELEGATE.sel_host_AIN isEqualToString:@"AIN"]) {
+            _host_set_t1.text = @"AIN";
+        }
+        _host_set_t2.text = THEAPPDELEGATE.sel_host_V;
+        if ([THEAPPDELEGATE.sel_host_H isEqualToString:@"Voltage"]) {
+            _host_set_t2.text = @"电压";
+        }
+    }else{
+        _host_set_t1.text = THEAPPDELEGATE.sel_host_T;
+        _host_set_t2.text = THEAPPDELEGATE.sel_host_V;
+    }
 }
 
 - (IBAction)clickAIMBtnSender:(UIButton *)sender {

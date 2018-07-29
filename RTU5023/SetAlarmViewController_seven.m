@@ -36,16 +36,16 @@
     u = [[Unitl alloc] init];
     
     if (THEAPPDELEGATE.langId == 0) {
-        _set_alarm_t1.text = THEAPPDELEGATE.sel_host_T;
-        if ([THEAPPDELEGATE.sel_host_T isEqualToString:@"Temperature"]) {
-            _set_alarm_t1.text = @"温度";
+        _set_alarm_t1.text = THEAPPDELEGATE.sel_host_AIN;
+        if ([THEAPPDELEGATE.sel_host_AIN isEqualToString:@"AIN"]) {
+            _set_alarm_t1.text = @"AIN";
         }
         _set_alarm_t2.text = THEAPPDELEGATE.sel_host_V;
         if ([THEAPPDELEGATE.sel_host_V isEqualToString:@"Voltage"]) {
             _set_alarm_t2.text = @"电压";
         }
     }else{
-        _set_alarm_t1.text = THEAPPDELEGATE.sel_host_T;
+        _set_alarm_t1.text = THEAPPDELEGATE.sel_host_AIN;
         _set_alarm_t2.text = THEAPPDELEGATE.sel_host_V;
     }
     

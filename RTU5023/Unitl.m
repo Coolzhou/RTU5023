@@ -72,6 +72,7 @@ AppDelegate *app_unitl;
     [host_dic setObject:@"Temperature" forKey:@"host_t"];
     [host_dic setObject:@"Humidty" forKey:@"host_h"];
     [host_dic setObject:@"Voltage" forKey:@"host_v"];
+    [host_dic setObject:@"AIN" forKey:@"host_AIN"];
     
     [hosts addObject:host_dic];
     [datas setObject:hosts forKey:@"hosts"];
@@ -147,6 +148,9 @@ AppDelegate *app_unitl;
                         break;
                     case 3:
                         [d setObject:n forKey:@"host_v"];
+                        break;
+                    case 4:
+                        [d setObject:n forKey:@"host_AIN"];
                         break;
                         
                     default:

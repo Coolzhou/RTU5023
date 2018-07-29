@@ -14,20 +14,18 @@
 @end
 
 @implementation SetTHViewController
-AppDelegate *set_th_app;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.tag = 1;
-    set_th_app = [[UIApplication sharedApplication] delegate];
-    self.view.backgroundColor = set_th_app.bgColor;
+    self.view.backgroundColor = THEAPPDELEGATE.bgColor;
     
     [[_set_th_bgV layer] setBorderWidth:2.0];//画线的宽度
-    [[_set_th_bgV layer] setBorderColor: set_th_app.borderColor.CGColor];//颜色
+    [[_set_th_bgV layer] setBorderColor: THEAPPDELEGATE.borderColor.CGColor];//颜色
     [[_set_th_bgV layer]setCornerRadius:15.0];//圆角
     [[_set_th_bgV2 layer] setBorderWidth:1.5];//画线的宽度
-    [[_set_th_bgV2 layer] setBorderColor: set_th_app.borderColor.CGColor];//颜色
+    [[_set_th_bgV2 layer] setBorderColor: THEAPPDELEGATE.borderColor.CGColor];//颜色
     
     
     
@@ -42,21 +40,47 @@ AppDelegate *set_th_app;
     if (string.length == 0) {
         return YES;
     }
-    if (textField.text.length >= 3) {
-        return NO;
+    
+    NSLog(@"ssss = %ld",[textField.text integerValue]);
+    
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        if (([textField.text integerValue] > 0 &&textField.text.length >= 3)||([textField.text integerValue] < 0 && textField.text.length >=4)) {
+            return NO;
+        }
+    }else{
+        if (textField.text.length >= 3) {
+            return NO;
+        }
     }
+    
     return [self validateNumber:string];
 }
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    if (textField.text.length >= 3) {
-        textField.text = [textField.text substringToIndex:3];
+    
+    
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        if (([textField.text integerValue] < 0 && textField.text.length >=4)) {
+            textField.text = [textField.text substringToIndex:4];
+        }else if([textField.text integerValue]>0 && textField.text.length >=3){
+            textField.text = [textField.text substringToIndex:3];
+        }
+    }else{
+        if (textField.text.length >= 3) {
+            textField.text = [textField.text substringToIndex:3];
+        }
     }
     return YES;
 }
 
 - (BOOL)validateNumber:(NSString*)number {
     BOOL res = YES;
-    NSCharacterSet* tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+    
+    NSCharacterSet* tmpSet = nil;
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"-0123456789"];
+    }else{
+        tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
+    }
     int i = 0;
     while (i < number.length) {
         NSString * string = [number substringWithRange:NSMakeRange(i, 1)];
@@ -78,16 +102,36 @@ AppDelegate *set_th_app;
 
 - (IBAction)set_th_okC:(id)sender {
     NSString *l = _set_th_L.text;
-    if (l.length <= 0 || l.length > 3 || ![self validateNumber:l]) {
-        NSString *msg = NSLocalizedString(@"setTHTip", nil);
-        [self alert:msg];
-        return;
-    }
+    //高限
     NSString *h = _set_th_H.text;
-    if (h.length <= 0 || h.length > 3 || ![self validateNumber:h]) {
-        NSString *msg = NSLocalizedString(@"setTHTip1", nil);
-        [self alert:msg];
-        return;
+    
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        //低限
+        if (l.length <= 0 || l.length > 4 || ![self validateNumber:l]) {
+            NSString *msg = NSLocalizedString(@"setTHTip", nil);
+            [self alert:msg];
+            return;
+        }
+        
+        
+        if (h.length <= 0 || h.length > 4 || ![self validateNumber:h]) {
+            NSString *msg = NSLocalizedString(@"setTHTip1", nil);
+            [self alert:msg];
+            return;
+        }
+    }else{
+        //低限
+        if (l.length <= 0 || l.length > 3 || ![self validateNumber:l]) {
+            NSString *msg = NSLocalizedString(@"setTHTip", nil);
+            [self alert:msg];
+            return;
+        }
+        //高限
+        if (h.length <= 0 || h.length > 3 || ![self validateNumber:h]) {
+            NSString *msg = NSLocalizedString(@"setTHTip1", nil);
+            [self alert:msg];
+            return;
+        }
     }
     
     if (l.length == 1) {
@@ -101,9 +145,23 @@ AppDelegate *set_th_app;
     }else if(h.length == 2){
         h = [NSString stringWithFormat:@"0%@",h];
     }
-    //1234AINR1L底限值H高限值#
-    NSString *mg = [NSString stringWithFormat:@"%@AINR%@L%@H%@#", set_th_app.sel_host_pwd, set_th_app.sel_seiral, l, h];
-    [set_th_app.mainV sendMsg:mg phNum:set_th_app.sel_host_phNum];
+    
+    
+    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        //1234AINR1L底限值H高限值#
+        NSString *mg = [NSString stringWithFormat:@"%@AINML%@H%@#", THEAPPDELEGATE.sel_host_pwd,l, h];
+        
+        NSLog(@"mg = %@",mg);
+        
+        [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+    }else{
+        //1234AINR1L底限值H高限值#
+        NSString *mg = [NSString stringWithFormat:@"%@AINR%@L%@H%@#", THEAPPDELEGATE.sel_host_pwd, THEAPPDELEGATE.sel_seiral, l, h];
+        
+        NSLog(@"mg = %@",mg);
+        
+        [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+    }
 }
 
 -(void)alert:(NSString*)msg{

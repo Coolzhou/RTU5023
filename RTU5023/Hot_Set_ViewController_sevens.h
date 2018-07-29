@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Hot_Set_ViewController_sevens : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *host_set_t1;
+
+@property (weak, nonatomic) IBOutlet UITextField *host_set_t2;
 
 @end

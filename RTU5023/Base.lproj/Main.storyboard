@@ -1884,7 +1884,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-945" y="2481"/>
+            <point key="canvasLocation" x="-956" y="2478"/>
         </scene>
         <!--HostRECONAV Controller-->
         <scene sceneID="YLh-3d-zzq">
@@ -3805,20 +3805,32 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
                                             </textField>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="savebtn" translatesAutoresizingMaskIntoConstraints="NO" id="7TF-jq-sPm">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TF-jq-sPm">
                                                 <rect key="frame" x="5" y="174.5" width="109" height="34"/>
+                                                <color key="backgroundColor" red="0.37647058820000001" green="0.74117647060000003" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="YeV-Dr-d8p"/>
                                                     <constraint firstAttribute="width" constant="109" id="reE-mK-xyX"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="savebtn" translatesAutoresizingMaskIntoConstraints="NO" id="9V0-VF-yS3">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9V0-VF-yS3">
                                                 <rect key="frame" x="126" y="174.5" width="107" height="34"/>
+                                                <color key="backgroundColor" red="0.37647058820000001" green="0.74117647060000003" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="107" id="Aug-kc-q8a"/>
                                                     <constraint firstAttribute="height" constant="34" id="uLy-f5-QBc"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Alarm Threshold" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RP-aN-4W8">
                                                 <rect key="frame" x="131" y="176.5" width="95" height="27"/>
@@ -3850,13 +3862,19 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNS-UZ-wve">
                                                 <rect key="frame" x="40" y="218.5" width="160" height="34"/>
+                                                <color key="backgroundColor" red="0.37647058820000001" green="0.74117647060000003" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="iEc-uj-5AF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <state key="normal" title=" 查询AIN测量范围" backgroundImage="savebtn">
+                                                <state key="normal" title=" 查询AIN测量范围">
                                                     <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="clickAIMBtnSender:" destination="PhZ-DI-enb" eventType="touchUpInside" id="Edw-gY-I4n"/>
                                                 </connections>
@@ -3933,6 +3951,8 @@
                     <connections>
                         <outlet property="bgView" destination="93e-jh-pkO" id="yzB-9v-Q0n"/>
                         <outlet property="bgView2" destination="Hho-f7-BVi" id="E3x-dT-foB"/>
+                        <outlet property="host_set_t1" destination="uF4-lw-3Sp" id="DQ1-2u-4E6"/>
+                        <outlet property="host_set_t2" destination="qEP-eL-w1P" id="53L-ko-yz4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gh9-FW-kNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4121,7 +4141,7 @@
                                                                     <constraint firstAttribute="height" constant="20" id="qI5-2I-OoK"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                                <state key="normal" title="关闭">
+                                                                <state key="normal" title="删除">
                                                                     <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
                                                                 <userDefinedRuntimeAttributes>
@@ -6130,7 +6150,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3208" y="3281"/>
+            <point key="canvasLocation" x="3193" y="3281"/>
         </scene>
         <!--Hot Set View Controller eight-->
         <scene sceneID="fCW-ni-rPh">

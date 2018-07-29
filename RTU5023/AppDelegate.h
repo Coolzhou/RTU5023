@@ -25,6 +25,7 @@
 @property NSString *sel_host_T;
 @property NSString *sel_host_H;
 @property NSString *sel_host_V;
+@property NSString *sel_host_AIN;
 
 @property NSString *documentDirectory;
 @property BOOL isAddHost;

@@ -150,6 +150,7 @@ AppDelegate *app;
     app.sel_host_T = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_t"];
     app.sel_host_H = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_h"];
     app.sel_host_V = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_v"];
+    app.sel_host_AIN = [[hostACs objectAtIndex:indexPath.row] objectForKey:@"host_AIN"];
 
     
     if (!app.isAddHost) {//是编辑模式下

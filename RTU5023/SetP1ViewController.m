@@ -16,6 +16,8 @@
 #import "DailyNavigationController.h"
 #import "PWDNavigationController.h"
 #import "CycleNAVController.h"
+#import "SetAlarmViewController_six.h"
+#import "SetAlarmViewController_seven.h"
 
 @interface SetP1ViewController ()
 
@@ -78,8 +80,21 @@ AppDelegate *setP1_app;
 
 //设置温度电压参数
 - (IBAction)setP1_setClick:(id)sender{
-    SetAlarmNAVController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"seta"];
-    [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+    
+    if ([setP1_app.sel_host_type isEqualToString:@"RTU5023"]) {
+        SetAlarmNAVController *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"seta"];
+        [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+        [self.navigationController pushViewController:hnc.visibleViewController animated:YES];
+    }else if ([setP1_app.sel_host_type isEqualToString:@"RTU5026"]){
+        SetAlarmViewController_six *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetAlarmViewController_six"];
+        [self.navigationController pushViewController:hnc animated:YES];
+    }else if ([setP1_app.sel_host_type isEqualToString:@"RTU5027"]){
+        SetAlarmViewController_seven *hnc =   [self.storyboard instantiateViewControllerWithIdentifier:@"SetAlarmViewController_seven"];
+        [self.navigationController pushViewController:hnc animated:YES];
+    }else{
+    }
+    
+    
 
     
 }

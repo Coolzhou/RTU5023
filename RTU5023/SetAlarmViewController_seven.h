@@ -10,4 +10,11 @@
 
 @interface SetAlarmViewController_seven : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *set_alarm_t1;
+@property (weak, nonatomic) IBOutlet UITextField *set_alarm_t2;
+@property (weak, nonatomic) IBOutlet UILabel *set_alarm_h1;
+@property (weak, nonatomic) IBOutlet UILabel *set_alarm_l1;
+@property (weak, nonatomic) IBOutlet UILabel *set_alarm_h2;
+@property (weak, nonatomic) IBOutlet UILabel *set_alarm_l2;
+
 @end

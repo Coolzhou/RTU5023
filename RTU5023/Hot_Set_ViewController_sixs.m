@@ -9,6 +9,8 @@
 #import "Hot_Set_ViewController_sixs.h"
 
 @interface Hot_Set_ViewController_sixs ()
+@property (weak, nonatomic) IBOutlet UIView *bgView;
+@property (weak, nonatomic) IBOutlet UIView *bgView2;
 
 @end
 
@@ -19,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = THEAPPDELEGATE.bgColor;
+    
+    self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
+    self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
 
 }

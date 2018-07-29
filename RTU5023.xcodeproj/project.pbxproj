@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB6E3D16210D733B0065F2ED /* SetAlarmViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */; };
+		CB6E3D19210D734C0065F2ED /* SetAlarmViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */; };
 		CBE3A4BF210698640060BF8C /* Hot_Set_ViewController_sixs.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */; };
-		CBE3A4C621069F490060BF8C /* SetAlarmViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */; };
-		CBE3A4C921069F580060BF8C /* SetAlarmViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */; };
 		CBEE5F622104EF1300D046CA /* Hot_Set_ViewController_sevens.m in Sources */ = {isa = PBXBuildFile; fileRef = CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */; };
 		DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9035481CB3A7F600FD63A1 /* Localizable.strings */; };
 		DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA90354C1CB3A7FC00FD63A1 /* InfoPlist.strings */; };
@@ -77,14 +77,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB6E3D14210D733A0065F2ED /* SetAlarmViewController_six.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_six.h; sourceTree = "<group>"; };
+		CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
+		CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_seven.m; sourceTree = "<group>"; };
+		CB6E3D18210D734C0065F2ED /* SetAlarmViewController_seven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_seven.h; sourceTree = "<group>"; };
 		CBE3A4BD210698640060BF8C /* Hot_Set_ViewController_sixs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_sixs.h; sourceTree = "<group>"; };
 		CBE3A4BE210698640060BF8C /* Hot_Set_ViewController_sixs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_sixs.m; sourceTree = "<group>"; };
 		CBE3A4C021069ADE0060BF8C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CBE3A4C121069B950060BF8C /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		CBE3A4C421069F490060BF8C /* SetAlarmViewController_six.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_six.h; sourceTree = "<group>"; };
-		CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
-		CBE3A4C721069F580060BF8C /* SetAlarmViewController_seven.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_seven.h; sourceTree = "<group>"; };
-		CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_seven.m; sourceTree = "<group>"; };
 		CBEE5F602104EF1300D046CA /* Hot_Set_ViewController_sevens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hot_Set_ViewController_sevens.h; sourceTree = "<group>"; };
 		CBEE5F612104EF1300D046CA /* Hot_Set_ViewController_sevens.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hot_Set_ViewController_sevens.m; sourceTree = "<group>"; };
 		DA6394D11CB396E10017715D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -211,8 +211,8 @@
 		CBE3A4C221069F190060BF8C /* 5026 */ = {
 			isa = PBXGroup;
 			children = (
-				CBE3A4C421069F490060BF8C /* SetAlarmViewController_six.h */,
-				CBE3A4C521069F490060BF8C /* SetAlarmViewController_six.m */,
+				CB6E3D14210D733A0065F2ED /* SetAlarmViewController_six.h */,
+				CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */,
 			);
 			name = 5026;
 			sourceTree = "<group>";
@@ -220,8 +220,8 @@
 		CBE3A4C321069F210060BF8C /* 5027 */ = {
 			isa = PBXGroup;
 			children = (
-				CBE3A4C721069F580060BF8C /* SetAlarmViewController_seven.h */,
-				CBE3A4C821069F580060BF8C /* SetAlarmViewController_seven.m */,
+				CB6E3D18210D734C0065F2ED /* SetAlarmViewController_seven.h */,
+				CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */,
 			);
 			name = 5027;
 			sourceTree = "<group>";
@@ -577,14 +577,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE3A4C921069F580060BF8C /* SetAlarmViewController_seven.m in Sources */,
+				CB6E3D19210D734C0065F2ED /* SetAlarmViewController_seven.m in Sources */,
 				DAAFF60E1CB2613A000485B5 /* NavigationController.m in Sources */,
 				DAAFF67A1CB2BDE8000485B5 /* LanguageNAVController.m in Sources */,
 				DACDB34C1DE71F5900449F17 /* CycleViewController.m in Sources */,
 				DAAFF66E1CB2B613000485B5 /* DailyViewController.m in Sources */,
 				DAAFF61D1CB26258000485B5 /* AddNavigationController.m in Sources */,
 				DAAFF62C1CB26275000485B5 /* SetPWDNavigationController.m in Sources */,
-				CBE3A4C621069F490060BF8C /* SetAlarmViewController_six.m in Sources */,
+				CB6E3D16210D733B0065F2ED /* SetAlarmViewController_six.m in Sources */,
 				DAAFF66D1CB2B613000485B5 /* DailyNavigationController.m in Sources */,
 				DAAFF62B1CB26275000485B5 /* AppPWDViewController.m in Sources */,
 				DAAFF62D1CB26275000485B5 /* SetPWDViewController.m in Sources */,

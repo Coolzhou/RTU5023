@@ -8,7 +8,9 @@
 
 #import "Hot_Set_ViewController_sevens.h"
 @interface Hot_Set_ViewController_sevens ()
+@property (weak, nonatomic) IBOutlet UIView *bgView;
 
+@property (weak, nonatomic) IBOutlet UIView *bgView2;
 @end
 
 @implementation Hot_Set_ViewController_sevens
@@ -16,6 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = THEAPPDELEGATE.bgColor;
+    
+    self.bgView.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
+    self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
     
 }

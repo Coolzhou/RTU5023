@@ -33,6 +33,10 @@
 
 - (IBAction)clickSetupBtnSender:(UIButton *)sender {
     
+//    if (self.textField1.text.length <=0 ||self.textField2.text.length <=0 || self.textField3.text.length <=0) {
+//        return;
+//    }
+    
     NSString *mg = [NSString stringWithFormat:@"%@AP%@#%@#%@", THEAPPDELEGATE.sel_host_pwd,self.textField1.text,self.textField2.text,self.textField3.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
     

@@ -33,6 +33,55 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
     self.titleLable.text = NSLocalizedString(@"ao_5029_title", nil);
+
+
+    [self.textField1 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+
+    [self.textField2 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+
+    [self.textField3 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+
+    [self.textField4 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    
+    [self.textField5 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    
+    [self.textField6 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    
+    [self.textField7 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+}
+
+- (void)textFieldChange:(UITextField *)textField{
+    
+    if (textField == self.textField1 || textField == self.textField2) {
+        NSString *textStr = textField.text;
+        if ([textField.text integerValue] > 65535 && textField.text.length <= 5) {
+            textField.text = [textStr substringToIndex:4];
+        }else if (textField.text.length>5){
+            textField.text = [textStr substringToIndex:5];
+        }else{
+            
+        }
+    }else{
+        
+        NSInteger maxLength = 20;
+        if (self.textField3 == textField || self.textField4 == textField|| self.textField5 == textField|| self.textField6 == textField ) {
+            maxLength = 40;
+        }else{
+            maxLength = 60;
+        }
+        NSString *toBeString = textField.text;
+        UITextRange *selectedRange = [textField markedTextRange];
+        UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
+        
+        // 没有高亮选择的字，则对已输入的文字进行字数统计和限制,防止中文被截断
+        if (!position){
+            if (toBeString.length > maxLength){
+                //中文和emoj表情存在问题，需要对此进行处理
+                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, maxLength)];
+                textField.text = [toBeString substringWithRange:rangeRange];
+            }
+        }
+    }
 }
 
 //时间

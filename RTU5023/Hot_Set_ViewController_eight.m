@@ -28,7 +28,22 @@
     self.bgView2.layer.borderColor = THEAPPDELEGATE.borderColor.CGColor;
     
     self.titleLable.text = NSLocalizedString(@"ao_5028_title", nil);
+    
+    [self.textField addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
 }
+
+- (void)textFieldChange:(UITextField *)textField{
+    NSString *textStr = textField.text;
+    
+    if ([textField.text integerValue] > 65535 && textField.text.length <= 5) {
+        textField.text = [textStr substringToIndex:4];
+    }else if (textField.text.length>5){
+        textField.text = [textStr substringToIndex:5];
+    }else{
+        
+    }
+}
+
 
 - (IBAction)clickOkButtonSender:(UIButton *)sender {
     

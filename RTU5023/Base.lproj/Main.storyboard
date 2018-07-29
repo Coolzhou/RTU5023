@@ -4564,6 +4564,9 @@
                         <outlet property="textField1" destination="e0f-za-0A7" id="oBQ-k9-QcW"/>
                         <outlet property="textField2" destination="f3G-kh-w66" id="9sN-c0-7s9"/>
                         <outlet property="textField3" destination="4k0-yU-FFB" id="76G-tb-qNO"/>
+                        <outlet property="textField4" destination="Oll-rL-O6U" id="EOO-BV-ohm"/>
+                        <outlet property="textField5" destination="0CZ-ma-cW8" id="ZRO-eK-S3w"/>
+                        <outlet property="textField6" destination="EmU-cF-FGl" id="Mzj-dg-8rP"/>
                         <outlet property="titleLable" destination="3cX-mL-r4C" id="Fa6-le-iBb"/>
                     </connections>
                 </viewController>
@@ -4813,7 +4816,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVl-13-YJu">
                                                                 <rect key="frame" x="200" y="45.5" width="20" height="20"/>
@@ -5348,7 +5351,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VC-6H-cDK">
                                                                 <rect key="frame" x="200" y="45.5" width="20" height="20"/>
@@ -6332,7 +6335,7 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0-65566秒" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Fsc-6T-tzQ">
                                                 <rect key="frame" x="98" y="29.5" width="85" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBv-42-qnW">
                                                 <rect key="frame" x="198" y="34.5" width="22" height="22"/>

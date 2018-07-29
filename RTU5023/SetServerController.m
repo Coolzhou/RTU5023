@@ -35,6 +35,50 @@
     NSString *protocol3 = NSLocalizedString(@"protocol_3", nil);
     
     self.dataArr = [NSArray arrayWithObjects:protocol1,protocol2,protocol3, nil];
+    
+    [self.textField3 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    [self.textField4 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    [self.textField5 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+    [self.textField6 addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
+}
+
+- (void)textFieldChange:(UITextField *)textField{
+    
+    if (textField == self.textField6) {
+        NSString *textStr = textField.text;
+        if ([textField.text integerValue] > 65535 && textField.text.length <= 5) {
+            textField.text = [textStr substringToIndex:4];
+        }else if (textField.text.length>5){
+            textField.text = [textStr substringToIndex:5];
+        }else{
+            
+        }
+    }else if (textField == self.textField5){
+        NSString *textStr = textField.text;
+        if ([textField.text integerValue] >= 10000) {
+            textField.text = [textStr substringToIndex:4];
+        }
+    }else{
+        
+        NSInteger maxLength = 20;
+        if (self.textField3 == textField) {
+            maxLength = 50;
+        }else if(self.textField4 == textField){
+            maxLength = 20;
+        }
+        NSString *toBeString = textField.text;
+        UITextRange *selectedRange = [textField markedTextRange];
+        UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
+        
+        // 没有高亮选择的字，则对已输入的文字进行字数统计和限制,防止中文被截断
+        if (!position){
+            if (toBeString.length > maxLength){
+                //中文和emoj表情存在问题，需要对此进行处理
+                NSRange rangeRange = [toBeString rangeOfComposedCharacterSequencesForRange:NSMakeRange(0, maxLength)];
+                textField.text = [toBeString substringWithRange:rangeRange];
+            }
+        }
+    }
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -66,6 +110,10 @@
 }
 
 - (IBAction)clickSetupBtn1:(id)sender {
+    
+    if (self.textField1.text.length<=0 || self.textField2.text.length <= 0) {
+        return;
+    }
     
     NSString *mg = [NSString stringWithFormat:@"%@IP%@*%@", THEAPPDELEGATE.sel_host_pwd,self.textField1.text,self.textField2.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
@@ -104,6 +152,9 @@
 
 // --------------
 - (IBAction)clickSetupBtn3:(id)sender {
+    if (self.textField3.text.length<=0) {
+        return;
+    }
     NSString *mg = [NSString stringWithFormat:@"%@RTP%@", THEAPPDELEGATE.sel_host_pwd,self.textField3.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
 }
@@ -114,6 +165,9 @@
 }
 
 - (IBAction)clickSetupBtn4:(id)sender {
+    if (self.textField4.text.length<=0) {
+        return;
+    }
     NSString *mg = [NSString stringWithFormat:@"%@HET%@", THEAPPDELEGATE.sel_host_pwd,self.textField4.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
 }
@@ -124,6 +178,10 @@
 }
 
 - (IBAction)clickSetupBtn5:(id)sender {
+    NSInteger time = [self.textField5.text integerValue];
+    if (time<=0) {
+        return;
+    }
     NSString *mg = [NSString stringWithFormat:@"%@HT%@", THEAPPDELEGATE.sel_host_pwd,self.textField5.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
 }
@@ -134,6 +192,11 @@
 }
 
 - (IBAction)clickSetupBtn6:(id)sender {
+    
+    NSInteger time = [self.textField6.text integerValue];
+    if (time<60) {
+        return;
+    }
     NSString *mg = [NSString stringWithFormat:@"%@RECONT%@", THEAPPDELEGATE.sel_host_pwd,self.textField6.text];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
 }
@@ -144,6 +207,7 @@
 }
 
 - (IBAction)clickAgainBtn:(id)sender {
+    
     
     NSString *mg = [NSString stringWithFormat:@"%@GPRSonline", THEAPPDELEGATE.sel_host_pwd];
     [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];

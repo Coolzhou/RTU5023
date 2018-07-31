@@ -31,6 +31,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjU-4c-YP4"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjd-BR-EmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

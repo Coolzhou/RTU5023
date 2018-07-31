@@ -701,7 +701,7 @@
 				TargetAttributes = {
 					DAAFF57B1CB25EC6000485B5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 8Y7KGS47M5;
+						DevelopmentTeam = 56ZWZ5K99K;
 						ProvisioningStyle = Automatic;
 					};
 					DAAFF5941CB25EC6000485B5 = {
@@ -999,7 +999,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7KGS47M5;
+				DEVELOPMENT_TEAM = 56ZWZ5K99K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1018,7 +1018,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Y7KGS47M5;
+				DEVELOPMENT_TEAM = 56ZWZ5K99K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

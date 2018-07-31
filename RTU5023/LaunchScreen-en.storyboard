@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5023.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-SJ-BrI">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3Tg-SJ-BrI" firstAttribute="top" secondItem="CjU-4c-YP4" secondAttribute="top" id="PUQ-pC-Y18"/>
                             <constraint firstItem="3Tg-SJ-BrI" firstAttribute="leading" secondItem="CjU-4c-YP4" secondAttribute="leading" id="Zma-Lw-npH"/>
                             <constraint firstItem="CjU-4c-YP4" firstAttribute="trailing" secondItem="3Tg-SJ-BrI" secondAttribute="trailing" id="a4X-Av-7Ms"/>
                             <constraint firstItem="CjU-4c-YP4" firstAttribute="bottom" secondItem="3Tg-SJ-BrI" secondAttribute="bottom" id="hTe-dt-nN6"/>
+                            <constraint firstItem="3Tg-SJ-BrI" firstAttribute="top" secondItem="np8-LQ-if9" secondAttribute="top" id="mxP-Z8-Bfp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjU-4c-YP4"/>
                     </view>

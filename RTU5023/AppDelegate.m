@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     NSString *dir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     _documentDirectory = dir;
     NSLog(@"  _documentDirectory  %@",_documentDirectory);

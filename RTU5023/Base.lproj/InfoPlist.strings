@@ -6,3 +6,5 @@
   Copyright © 2016年 paul. All rights reserved.
 */
 CFBundleDisplayName="SMS ALert RTU5023";
+
+UILaunchStoryboardName = "LaunchScreen";

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441BAA072110614300EF776B /* LaunchScreen-en.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 441BAA062110614300EF776B /* LaunchScreen-en.storyboard */; };
+		441BAA092110629C00EF776B /* 5023.png in Resources */ = {isa = PBXBuildFile; fileRef = 441BAA082110629C00EF776B /* 5023.png */; };
+		441BAA0D211068E800EF776B /* 5023_en.png in Resources */ = {isa = PBXBuildFile; fileRef = 441BAA0C211068E800EF776B /* 5023_en.png */; };
 		CB6E3D16210D733B0065F2ED /* SetAlarmViewController_six.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */; };
 		CB6E3D19210D734C0065F2ED /* SetAlarmViewController_seven.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D17210D734C0065F2ED /* SetAlarmViewController_seven.m */; };
 		CB6E3D1C210D7D170065F2ED /* Hot_Set_ViewController_eight.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6E3D1B210D7D170065F2ED /* Hot_Set_ViewController_eight.m */; };
@@ -97,6 +100,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441BAA062110614300EF776B /* LaunchScreen-en.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen-en.storyboard"; sourceTree = "<group>"; };
+		441BAA082110629C00EF776B /* 5023.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5023.png; sourceTree = "<group>"; };
+		441BAA0C211068E800EF776B /* 5023_en.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5023_en.png; sourceTree = "<group>"; };
 		CB021D16210DC20100C57F6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CB6E3D14210D733A0065F2ED /* SetAlarmViewController_six.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetAlarmViewController_six.h; sourceTree = "<group>"; };
 		CB6E3D15210D733B0065F2ED /* SetAlarmViewController_six.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetAlarmViewController_six.m; sourceTree = "<group>"; };
@@ -466,12 +472,15 @@
 				DAAFF60A1CB2613A000485B5 /* NavigationController.m */,
 				DAAFF60B1CB2613A000485B5 /* ViewController.h */,
 				DAAFF60C1CB2613A000485B5 /* ViewController.m */,
+				441BAA062110614300EF776B /* LaunchScreen-en.storyboard */,
 				CBE3A4C021069ADE0060BF8C /* PrefixHeader.pch */,
 				CBE3A4C121069B950060BF8C /* Common.h */,
 				DAAFF5881CB25EC6000485B5 /* Main.storyboard */,
 				DAAFF58B1CB25EC6000485B5 /* Assets.xcassets */,
 				DAAFF58D1CB25EC6000485B5 /* LaunchScreen.storyboard */,
 				DAAFF5901CB25EC6000485B5 /* Info.plist */,
+				441BAA0C211068E800EF776B /* 5023_en.png */,
+				441BAA082110629C00EF776B /* 5023.png */,
 				DAAFF57F1CB25EC6000485B5 /* Supporting Files */,
 			);
 			path = RTU5023;
@@ -692,7 +701,7 @@
 				TargetAttributes = {
 					DAAFF57B1CB25EC6000485B5 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 55TTZWFS23;
+						DevelopmentTeam = 56ZWZ5K99K;
 						ProvisioningStyle = Automatic;
 					};
 					DAAFF5941CB25EC6000485B5 = {
@@ -733,8 +742,11 @@
 			files = (
 				DA9035461CB3A7F600FD63A1 /* Localizable.strings in Resources */,
 				DAAFF58F1CB25EC6000485B5 /* LaunchScreen.storyboard in Resources */,
+				441BAA0D211068E800EF776B /* 5023_en.png in Resources */,
 				CB6E3D59210DBCC60065F2ED /* IQKeyboardManager.bundle in Resources */,
 				DAAFF58C1CB25EC6000485B5 /* Assets.xcassets in Resources */,
+				441BAA072110614300EF776B /* LaunchScreen-en.storyboard in Resources */,
+				441BAA092110629C00EF776B /* 5023.png in Resources */,
 				DAAFF58A1CB25EC6000485B5 /* Main.storyboard in Resources */,
 				DA90354A1CB3A7FC00FD63A1 /* InfoPlist.strings in Resources */,
 			);
@@ -987,10 +999,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55TTZWFS23;
+				DEVELOPMENT_TEAM = 56ZWZ5K99K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsmalarmsystem.gsm.RTU5023;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1004,12 +1016,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 55TTZWFS23;
+				DEVELOPMENT_TEAM = 56ZWZ5K99K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/RTU5023/PrefixHeader.pch";
 				INFOPLIST_FILE = RTU5023/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gsmalarmsystem.gsm.RTU5023;
 				PRODUCT_NAME = "$(TARGET_NAME)";

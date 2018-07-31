@@ -76,9 +76,9 @@ AppDelegate *setP1_app;
     if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5028"]||[THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5029"]){
         self.setP1_L3.text = NSLocalizedString(@"ao_5029_title", nil);
     }else if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"]){
-        self.setP1_L3.text = NSLocalizedString(@"set_alarm_Parameters2", nil);
-    }else if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5026"]){
         self.setP1_L3.text = NSLocalizedString(@"set_alarm_Parameters3", nil);
+    }else if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5026"]){
+        self.setP1_L3.text = NSLocalizedString(@"set_alarm_Parameters2", nil);
     }else{
         self.setP1_L3.text = NSLocalizedString(@"set_alarm_Parameters", nil);
     }

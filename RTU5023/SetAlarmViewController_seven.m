@@ -49,6 +49,10 @@
         _set_alarm_t2.text = THEAPPDELEGATE.sel_host_V;
     }
     
+    self.titleLable2.text = NSLocalizedString(@"ain_setting", nil);
+    self.minLable.text = NSLocalizedString(@"ain_min", nil);
+    self.maxLable.text = NSLocalizedString(@"ain_max", nil);
+    
     NSLog(@"222sel_host_T = %@ - sel_host_H = %@ sel_host_V = %@ sel_host_AIN = %@",THEAPPDELEGATE.sel_host_T,THEAPPDELEGATE.sel_host_H,THEAPPDELEGATE.sel_host_V,THEAPPDELEGATE.sel_host_AIN);
     
     
@@ -73,15 +77,81 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if (string.length == 0) {
+        return YES;
+    }
+    
+    NSLog(@"ssss = %ld",[textField.text integerValue]);
+    
+    if (([textField.text integerValue] > 0 &&textField.text.length >= 5)||([textField.text integerValue] < 0 && textField.text.length >=6)) {
+        return NO;
+    }
+    return [self validateNumber:string];
+}
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    
+    if (([textField.text integerValue] < 0 && textField.text.length >=6)) {
+        textField.text = [textField.text substringToIndex:4];
+    }else if([textField.text integerValue]>0 && textField.text.length >=5){
+        textField.text = [textField.text substringToIndex:3];
+    }
+    return YES;
+}
+
+- (BOOL)validateNumber:(NSString*)number {
+    BOOL res = YES;
+    
+    NSCharacterSet* tmpSet = nil;
+
+    tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"-0123456789"];
+    int i = 0;
+    while (i < number.length) {
+        NSString * string = [number substringWithRange:NSMakeRange(i, 1)];
+        NSRange range = [string rangeOfCharacterFromSet:tmpSet];
+        if (range.length == 0) {
+            res = NO;
+            break;
+        }
+        i++;
+    }
+    return res;
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
 }
+
+
+
+//设置ain范围
+- (IBAction)clickSetupAinSender:(UIButton *)sender {
+    NSString *l = self.textField3.text;
+    //高限
+    NSString *h = self.textField4.text;
+    
+    if ([l integerValue] > [h integerValue]) {
+        return;
+    }
+    NSString *low = [NSString stringWithFormat:@"%ld0",[l integerValue]];
+    NSString *height = [NSString stringWithFormat:@"%ld0",[h integerValue]];
+    
+    NSString *mg = [NSString stringWithFormat:@"%@AINML%@H%@#", THEAPPDELEGATE.sel_host_pwd,low, height];
+    
+    NSLog(@"mg = %@",mg);
+    
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+    
+}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 
 - (IBAction)set_alarm_ok1C:(id)sender {
     NSString *s = _set_alarm_t1.text;

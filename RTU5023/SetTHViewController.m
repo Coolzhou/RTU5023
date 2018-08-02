@@ -44,6 +44,10 @@
     NSLog(@"ssss = %ld",[textField.text integerValue]);
     
     if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        if (([textField.text integerValue] > 0 &&textField.text.length >= 5)||([textField.text integerValue] < 0 && textField.text.length >=6)) {
+            return NO;
+        }
+    }else if([THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]){
         if (([textField.text integerValue] > 0 &&textField.text.length >= 3)||([textField.text integerValue] < 0 && textField.text.length >=4)) {
             return NO;
         }
@@ -59,6 +63,12 @@
     
     
     if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+        if (([textField.text integerValue] < 0 && textField.text.length >=6)) {
+            textField.text = [textField.text substringToIndex:6];
+        }else if([textField.text integerValue]>0 && textField.text.length >=5){
+            textField.text = [textField.text substringToIndex:5];
+        }
+    }else if ([THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]){
         if (([textField.text integerValue] < 0 && textField.text.length >=4)) {
             textField.text = [textField.text substringToIndex:4];
         }else if([textField.text integerValue]>0 && textField.text.length >=3){
@@ -76,7 +86,7 @@
     BOOL res = YES;
     
     NSCharacterSet* tmpSet = nil;
-    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
+    if (([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"])||([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5023"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"])||([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5026"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"])) {
         tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"-0123456789"];
     }else{
         tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
@@ -134,34 +144,23 @@
         }
     }
     
-    if (l.length == 1) {
-        l = [NSString stringWithFormat:@"00%@",l];
-    }else if(l.length == 2){
-        l = [NSString stringWithFormat:@"0%@",l];
-    }
-    
-    if (h.length == 1) {
-        h = [NSString stringWithFormat:@"00%@",h];
-    }else if(h.length == 2){
-        h = [NSString stringWithFormat:@"0%@",h];
-    }
-    
-    
-    if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
-        //1234AINR1L底限值H高限值#
-        NSString *mg = [NSString stringWithFormat:@"%@AINML%@H%@#", THEAPPDELEGATE.sel_host_pwd,l, h];
-        
-        NSLog(@"mg = %@",mg);
-        
-        [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+    if ([THEAPPDELEGATE.sel_seiral isEqualToString:@"2"]) {
+        l = [NSString stringWithFormat:@"%@",l];
     }else{
-        //1234AINR1L底限值H高限值#
-        NSString *mg = [NSString stringWithFormat:@"%@AINR%@L%@H%@#", THEAPPDELEGATE.sel_host_pwd, THEAPPDELEGATE.sel_seiral, l, h];
-        
-        NSLog(@"mg = %@",mg);
-        
-        [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
+        l = [NSString stringWithFormat:@"%@0",l];
     }
+    
+    if ([THEAPPDELEGATE.sel_seiral isEqualToString:@"2"]) {
+        h = [NSString stringWithFormat:@"%@",h];
+    }else{
+        h = [NSString stringWithFormat:@"%@0",h];
+    }
+    //1234AINR1L底限值H高限值#
+    NSString *mg = [NSString stringWithFormat:@"%@AINR%@L%@H%@#", THEAPPDELEGATE.sel_host_pwd, THEAPPDELEGATE.sel_seiral, l, h];
+    
+    NSLog(@"mg = %@",mg);
+    
+    [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
 }
 
 -(void)alert:(NSString*)msg{

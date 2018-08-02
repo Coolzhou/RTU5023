@@ -17,4 +17,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *set_alarm_h2;
 @property (weak, nonatomic) IBOutlet UILabel *set_alarm_l2;
 
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLable2;
+
+@property (weak, nonatomic) IBOutlet UILabel *minLable;
+@property (weak, nonatomic) IBOutlet UILabel *maxLable;
+
+@property (weak, nonatomic) IBOutlet UITextField *textField3;
+@property (weak, nonatomic) IBOutlet UITextField *textField4;
+
+
 @end

@@ -179,7 +179,7 @@
 
 - (IBAction)clickSetupBtn5:(id)sender {
     NSInteger time = [self.textField5.text integerValue];
-    if (time<=0) {
+    if (time<0) {
         return;
     }
     NSString *mg = [NSString stringWithFormat:@"%@HT%@", THEAPPDELEGATE.sel_host_pwd,self.textField5.text];

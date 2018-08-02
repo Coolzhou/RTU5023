@@ -54,9 +54,9 @@ setTHTip1="高限值不能为空，且只能输入数字，长度为3";//
 pwdTip="旧密码与当前密码不一致，请重新输入！";//
 pwdTip2="新密码必须位数字，且长度必须为4！";//
 pwdTip3="旧密码不能与新密码一致！";//
-set_alarm_Parameters="设置温度湿度以及电压参数";
-set_alarm_Parameters2="设置温度以及电压参数";
-set_alarm_Parameters3="设置AIN以及电压参数";
+set_alarm_Parameters="设置报警参数";
+set_alarm_Parameters2="设置报警参数";
+set_alarm_Parameters3="设置报警参数";
 
 inquery_device_state_parms="查询设备状态参数";
 

@@ -46,15 +46,6 @@ AppDelegate *user_app;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)viewWillAppear:(BOOL)animated {
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(keyboardWillDisappear:) name:UIKeyboardWillHideNotification object:nil];
-}
-
--(void)viewWillDisappear:(BOOL)animated {
-    isKeyShow = NO;
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
@@ -183,37 +174,4 @@ AppDelegate *user_app;
     [textField resignFirstResponder];
     return YES;
 }
-
-
--(CGFloat)keyboardEndingFrameHeight:(NSDictionary *)userInfo//计算键盘的高度
-{
-    CGRect keyboardEndingUncorrectedFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey]CGRectValue];
-    CGRect keyboardEndingFrame = [self.view convertRect:keyboardEndingUncorrectedFrame fromView:nil];
-    return keyboardEndingFrame.size.height;
-}
-
--(void)keyboardWillAppear:(NSNotification *)notification
-{
-    if ((editTextTag == 1 )&& !isKeyShow) {
-        isKeyShow = YES;
-        CGRect currentFrame = self.view.frame;
-        CGFloat change = [self keyboardEndingFrameHeight:[notification userInfo]];
-        currentFrame.origin.y = currentFrame.origin.y - change ;
-        self.view.frame = currentFrame;
-    }
-    
-}
-
--(void)keyboardWillDisappear:(NSNotification *)notification
-{
-    if (isKeyShow) {
-        isKeyShow = NO;
-        CGRect currentFrame = self.view.frame;
-        CGFloat change = [self keyboardEndingFrameHeight:[notification userInfo]];
-        currentFrame.origin.y = currentFrame.origin.y + change ;
-        self.view.frame = currentFrame;
-    }
-    
-}
-
 @end

@@ -72,7 +72,7 @@
 "IKI-eI-Gff.text" = "";
 
 /* Class = "UILabel"; text = "Setting Alarm Parameters"; ObjectID = "Iuw-cX-xOW"; */
-"Iuw-cX-xOW.text" = "设置温度湿度以及电压参数";
+"Iuw-cX-xOW.text" = "设置报警参数";
 
 /* Class = "UILabel"; text = "L"; ObjectID = "JWu-Ba-cQf"; */
 "JWu-Ba-cQf.text" = "低";

@@ -888,7 +888,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARH-20-Bc9">
-                                        <rect key="frame" x="0.0" y="91.5" width="140" height="91"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="140" height="90.5"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="searchHost.png" translatesAutoresizingMaskIntoConstraints="NO" id="G6v-oN-CqM">
                                                 <rect key="frame" x="55" y="9.5" width="31" height="46"/>
@@ -920,7 +920,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Otc-Ol-Tn2">
-                                        <rect key="frame" x="0.0" y="182" width="140" height="91.5"/>
+                                        <rect key="frame" x="0.0" y="181.5" width="140" height="91.5"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="lock.png" translatesAutoresizingMaskIntoConstraints="NO" id="Glx-bB-9Rz">
                                                 <rect key="frame" x="57" y="12" width="27" height="38"/>
@@ -952,7 +952,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-Dt-ueL">
-                                        <rect key="frame" x="140" y="182" width="140" height="91.5"/>
+                                        <rect key="frame" x="140" y="181.5" width="140" height="91.5"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="unLock.png" translatesAutoresizingMaskIntoConstraints="NO" id="IyY-dC-QLx">
                                                 <rect key="frame" x="51" y="12" width="38" height="38"/>
@@ -984,7 +984,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-kE-JrQ">
-                                        <rect key="frame" x="0.0" y="273.5" width="140" height="91.5"/>
+                                        <rect key="frame" x="0.0" y="273" width="140" height="91.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Report Schedule" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdz-EN-tON">
                                                 <rect key="frame" x="0.0" y="51.5" width="140" height="34"/>
@@ -1016,7 +1016,7 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-Ue-puM">
-                                        <rect key="frame" x="140" y="273.5" width="140" height="91.5"/>
+                                        <rect key="frame" x="140" y="273" width="140" height="91.5"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="msm1_unsel.png" translatesAutoresizingMaskIntoConstraints="NO" id="EHg-Fx-fAe">
                                                 <rect key="frame" x="41" y="5.5" width="58" height="58"/>
@@ -1048,17 +1048,17 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8h-W8-sJU">
-                                        <rect key="frame" x="0.0" y="365" width="140" height="90.5"/>
+                                        <rect key="frame" x="0.0" y="364.5" width="140" height="91"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="history_unsel.png" translatesAutoresizingMaskIntoConstraints="NO" id="G0d-ds-OxM">
-                                                <rect key="frame" x="45" y="5" width="50" height="50"/>
+                                                <rect key="frame" x="45" y="5.5" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="2w3-7s-YPh"/>
                                                     <constraint firstAttribute="width" constant="50" id="4Zu-IZ-UV5"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Alarm Records" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMK-a8-JxO">
-                                                <rect key="frame" x="0.0" y="46" width="140" height="35"/>
+                                                <rect key="frame" x="0.0" y="46.5" width="140" height="35"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="jlA-Y7-ZUa"/>
                                                 </constraints>
@@ -1080,10 +1080,10 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YY0-NX-Ven">
-                                        <rect key="frame" x="140" y="91.5" width="140" height="91"/>
+                                        <rect key="frame" x="140" y="91.5" width="140" height="90.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Device Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcZ-fE-EOu">
-                                                <rect key="frame" x="0.0" y="55.5" width="140" height="21"/>
+                                                <rect key="frame" x="0.0" y="54.5" width="140" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Dmd-xi-fAy"/>
                                                 </constraints>
@@ -1112,10 +1112,10 @@
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HT-ca-crb">
-                                        <rect key="frame" x="140" y="364.5" width="140" height="90.5"/>
+                                        <rect key="frame" x="140" y="364" width="140" height="91"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inquiry Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJV-TS-fqQ">
-                                                <rect key="frame" x="0.0" y="54.5" width="140" height="21"/>
+                                                <rect key="frame" x="0.0" y="55" width="140" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="fKZ-4R-vGr"/>
                                                 </constraints>
@@ -1123,7 +1123,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ain.png" translatesAutoresizingMaskIntoConstraints="NO" id="PGm-6Z-s58">
-                                                <rect key="frame" x="52" y="22" width="37" height="33"/>
+                                                <rect key="frame" x="52" y="22.5" width="37" height="33"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="37" id="vWB-Sh-Gjl"/>
                                                     <constraint firstAttribute="height" constant="33" id="y6a-xX-ira"/>
@@ -5909,9 +5909,6 @@
                                                 <rect key="frame" x="15" y="67" width="145" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="KwV-73-0df" id="DHY-oc-4gh"/>
-                                                </connections>
                                             </textField>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-TA-97X">
                                                 <rect key="frame" x="240" y="71" width="22" height="22"/>
@@ -5980,9 +5977,6 @@
                                                 <rect key="frame" x="15" y="32" width="145" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="KwV-73-0df" id="34a-tp-ixa"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6133,9 +6127,6 @@
                                                 <rect key="frame" x="15" y="67" width="145" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Mpy-g6-hXa" id="y4p-7e-A6l"/>
-                                                </connections>
                                             </textField>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="zvQ-AE-SS9">
                                                 <rect key="frame" x="240" y="71" width="22" height="22"/>
@@ -6204,9 +6195,6 @@
                                                 <rect key="frame" x="15" y="32" width="145" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
-                                                <connections>
-                                                    <outlet property="delegate" destination="Mpy-g6-hXa" id="YPO-RA-c1P"/>
-                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置AIN测量范围" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovz-fg-txW">
                                                 <rect key="frame" x="77" y="147" width="116.5" height="21"/>

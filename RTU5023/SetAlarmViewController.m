@@ -94,6 +94,7 @@ AppDelegate *set_alarm_app;
     }
     BOOL b = [u updateSETTING_Name:s index:1 phNum:set_alarm_app.sel_host_phNum];
     if (b) {
+        THEAPPDELEGATE.sel_host_T = s;
         NSString *mg = [NSString stringWithFormat:@"%@AIN1T%@", set_alarm_app.sel_host_pwd, s];
         [set_alarm_app.mainV sendMsg:mg phNum:set_alarm_app.sel_host_phNum];
     }
@@ -109,6 +110,7 @@ AppDelegate *set_alarm_app;
     }
     BOOL b = [u updateSETTING_Name:s index:2 phNum:set_alarm_app.sel_host_phNum];
     if (b) {
+        THEAPPDELEGATE.sel_host_H = s;
         NSString *mg = [NSString stringWithFormat:@"%@AIN2T%@", set_alarm_app.sel_host_pwd, s];
         [set_alarm_app.mainV sendMsg:mg phNum:set_alarm_app.sel_host_phNum];
     }
@@ -124,6 +126,7 @@ AppDelegate *set_alarm_app;
     }
     BOOL b = [u updateSETTING_Name:s index:3 phNum:set_alarm_app.sel_host_phNum];
     if (b) {
+        THEAPPDELEGATE.sel_host_V = s;
         NSString *mg = [NSString stringWithFormat:@"%@AIN3T%@", set_alarm_app.sel_host_pwd, s];
         [set_alarm_app.mainV sendMsg:mg phNum:set_alarm_app.sel_host_phNum];
     }

@@ -93,6 +93,7 @@
     }
     BOOL b = [u updateSETTING_Name:s index:1 phNum:THEAPPDELEGATE.sel_host_phNum];
     if (b) {
+        THEAPPDELEGATE.sel_host_T = s;
         NSString *mg = [NSString stringWithFormat:@"%@AIN1T%@", THEAPPDELEGATE.sel_host_pwd, s];
         [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
     }
@@ -108,6 +109,7 @@
     }
     BOOL b = [u updateSETTING_Name:s index:3 phNum:THEAPPDELEGATE.sel_host_phNum];
     if (b) {
+        THEAPPDELEGATE.sel_host_V = s;
         NSString *mg = [NSString stringWithFormat:@"%@AIN3T%@", THEAPPDELEGATE.sel_host_pwd, s];
         [THEAPPDELEGATE.mainV sendMsg:mg phNum:THEAPPDELEGATE.sel_host_phNum];
     }

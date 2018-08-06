@@ -116,16 +116,24 @@
     NSString *h = _set_th_H.text;
     
     if ([THEAPPDELEGATE.sel_host_type isEqualToString:@"RTU5027"] && [THEAPPDELEGATE.sel_seiral isEqualToString:@"1"]) {
-        //低限
-        if (l.length <= 0 || l.length > 4 || ![self validateNumber:l]) {
-            NSString *msg = NSLocalizedString(@"setTHTip", nil);
+        
+        
+        if (([l integerValue] < 0 && l.length >6)|| l.length<=0 || ![self validateNumber:l]) {
+            NSString *msg = NSLocalizedString(@"AINsetTHTip", nil);
+            [self alert:msg];
+            return;
+        }else if(([l integerValue]>0 && l.length >5) || l.length<=0 || ![self validateNumber:l]){
+            NSString *msg = NSLocalizedString(@"AINsetTHTip", nil);
             [self alert:msg];
             return;
         }
         
-        
-        if (h.length <= 0 || h.length > 4 || ![self validateNumber:h]) {
-            NSString *msg = NSLocalizedString(@"setTHTip1", nil);
+        if (([h integerValue] < 0 && h.length >6)|| h.length<=0 || ![self validateNumber:h]) {
+            NSString *msg = NSLocalizedString(@"AINsetTHTip1", nil);
+            [self alert:msg];
+            return;
+        }else if(([h integerValue]>0 && h.length >5) || h.length<=0 || ![self validateNumber:h]){
+            NSString *msg = NSLocalizedString(@"AINsetTHTip1", nil);
             [self alert:msg];
             return;
         }

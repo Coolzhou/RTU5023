@@ -6,7 +6,7 @@
   Copyright © 2016年 paul. All rights reserved.
 */
 /*main*/
-titleL="SMS ALert";
+titleL="SMS Alert";
 titleL2="主机账户";
 btnL="添加主机账户";
 nBtnLL1="编辑";
@@ -48,6 +48,10 @@ userAlerCanBtn="忽略";
 /*SET Alarm*/
 setAlarmTip="名字不能为空！";
 /*Set TH*/
+
+AINsetTHTip="低限值不能为空，且只能输入数字，长度为5";//
+AINsetTHTip1="高限值不能为空，且只能输入数字，长度为5";//
+
 setTHTip="低限值不能为空，且只能输入数字，长度为3";//
 setTHTip1="高限值不能为空，且只能输入数字，长度为3";//
 /*SET PWD*/
@@ -63,17 +67,17 @@ inquery_device_state_parms="查询设备状态参数";
 
 ain_query="查询AIN测量范围";
 ain_setting="设置AIN测量范围";
-ain_setting_title="设置AIN以及电压参数";
+ain_setting_title="设置报警参数";
 ain_max="最大值";
 ain_min="最小值";
 
 
-ao_5028_title="设置AO输出（警号）";
+ao_5028_title="设置12V输出（警号）";
 
 
 ao_5029_title="设置报警参数";
-ao_output_time="AO输出时间";
-ao_output_status="AO输出状态";
+ao_output_time="12V输出时间";
+ao_output_status="12V输出状态";
 
 power="外部电源";
 power_="三/单相电";

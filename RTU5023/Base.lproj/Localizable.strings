@@ -6,7 +6,7 @@
   Copyright © 2016年 paul. All rights reserved.
 */
 /*main*/
-titleL="SMS ALert";
+titleL="SMS Alert";
 titleL2="Device List";
 btnL="Add Device";
 nBtnLL1="Edit";
@@ -48,6 +48,10 @@ userAlerCanBtn="Cancel";
 /*SET Alarm*/
 setAlarmTip="Name can not be empty!";
 /*Set TH*/
+
+AINsetTHTip="Low cannot be empty, and can only enter the number, length of 5";//低限值不能为空，且只能输入数字，长度为5
+AINsetTHTip1="High cannot be empty, and can only enter the number, length of 5";//高限值不能为空，且只能输入数字，长度为5
+
 setTHTip="Low cannot be empty, and can only enter the number, length of 3";//低限值不能为空，且只能输入数字，长度为3
 setTHTip1="High cannot be empty, and can only enter the number, length of 3";//高限值不能为空，且只能输入数字，长度为3
 /*SET PWD*/
@@ -68,12 +72,12 @@ ain_max="Max";
 ain_min="Min";
 
 
-ao_5028_title="Set AO Output(Siren)";
+ao_5028_title="Set 12V Output(Siren)";
 
 
 ao_5029_title="Set Alarm Parameters";
-ao_output_time="AO Output Time";
-ao_output_status="AO Output Status";
+ao_output_time="12V Output Time";
+ao_output_status="12V Output Status";
 
 power="External Power";
 power_="3/Single Phase Electric";

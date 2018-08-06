@@ -471,7 +471,7 @@
 "kbG-BK-pbR.text" = "Arm";
 
 /* Class = "UILabel"; text = "AO输出时间"; ObjectID = "ks6-3o-0HB"; */
-"ks6-3o-0HB.text" = "AO Output Time";
+"ks6-3o-0HB.text" = "12V Output Time";
 
 /* Class = "UILabel"; text = "New Password"; ObjectID = "lEi-6m-XAO"; */
 "lEi-6m-XAO.text" = "New Password";
@@ -567,7 +567,7 @@
 "wfw-MN-MVE.text" = "Communication Protocol";
 
 /* Class = "UILabel"; text = "AO输出状态"; ObjectID = "xHQ-ZS-tKQ"; */
-"xHQ-ZS-tKQ.text" = "AO Output Status";
+"xHQ-ZS-tKQ.text" = "12V Output Status";
 
 /* Class = "UILabel"; text = "English"; ObjectID = "y4J-Kt-pgI"; */
 "y4J-Kt-pgI.text" = "English";

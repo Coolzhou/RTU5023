@@ -93,9 +93,9 @@
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     
     if (([textField.text integerValue] < 0 && textField.text.length >=6)) {
-        textField.text = [textField.text substringToIndex:4];
+        textField.text = [textField.text substringToIndex:6];
     }else if([textField.text integerValue]>0 && textField.text.length >=5){
-        textField.text = [textField.text substringToIndex:3];
+        textField.text = [textField.text substringToIndex:5];
     }
     return YES;
 }
